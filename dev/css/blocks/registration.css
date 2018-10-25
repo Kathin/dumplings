@@ -1,0 +1,191 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.registration-page {
+  background-image: -webkit-linear-gradient(68deg, #fff 21%, #f3f0fe 100%);
+  background-image: -o-linear-gradient(68deg, #fff 21%, #f3f0fe 100%);
+  background-image: linear-gradient(22deg, #fff 21%, #f3f0fe 100%);
+  padding-top: 120px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.registration-page__form {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../img/form-support.png") no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .registration-page__form {
+    padding: 65px 120px;
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .registration-page__form {
+    width: calc(100% + 40px);
+    padding: 65px 20px;
+    margin-left: -20px;
+    background-size: calc(100% + 280px) 100%;
+    background-position: center;
+  }
+}
+.registration-page__form form {
+  margin-top: 26px;
+}
+@media only screen and (min-width: 768px) {
+  .registration-page__form form {
+    width: 373px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .registration-page__form form {
+    width: 100%;
+  }
+}
+.registration-page__form-title {
+  color: #fff;
+  font-size: 23px;
+  line-height: 55px;
+  font-weight: bold;
+}
+.registration-page__form-input {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.registration-page__form-input input {
+  color: #fff;
+}
+.registration-page__form-input input:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+}
+.registration-page__form-input textarea {
+  color: #fff;
+}
+.registration-page__form-input + .registration-page__form-input {
+  margin-top: 20px;
+}
+.registration-page__form-input .input__error {
+  color: #fff;
+  bottom: -19px;
+}
+.registration-page__form-input + .control-label__input {
+  margin-top: 20px;
+  display: block;
+}
+.registration-page__form-button {
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 27.5px;
+  position: relative;
+  font-size: 16px;
+  height: 55px;
+  line-height: 16px;
+  text-align: center;
+  padding: 20px 25px 19px;
+  color: #6841f2;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  background: #fff;
+  -webkit-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .registration-page__form-button {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .registration-page__form-button {
+    width: 100%;
+  }
+}
+.registration-page__form-button:hover {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.registration-page__form-url {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+  font-style: italic;
+  opacity: 0.6;
+}
+@media only screen and (min-width: 768px) {
+  .registration-page__form-url {
+    text-align: center;
+    padding-left: 34px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .registration-page__form-url {
+    text-align: left;
+  }
+}
+.registration-page__form-url a {
+  color: #fff;
+}
+.autorization__form {
+  display: inline-block;
+  vertical-align: top;
+  background: url("../img/form-support.png") no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .autorization__form {
+    padding: 65px 120px;
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .autorization__form {
+    width: calc(100% + 40px);
+    padding: 65px 20px;
+    margin-left: -20px;
+    background-size: calc(100% + 280px) 100%;
+    background-position: center;
+  }
+}
+.autorization__form form {
+  margin-top: 26px;
+}
+@media only screen and (min-width: 768px) {
+  .autorization__form form {
+    width: 373px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .autorization__form form {
+    width: 100%;
+  }
+}

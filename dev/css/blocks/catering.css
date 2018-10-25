@@ -1,0 +1,47 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.catering .header {
+  background-image: url("../img/catering/bg.png");
+}
+.catering .header__title {
+  margin-top: 165px;
+  letter-spacing: 0.2px;
+  padding: 13px 86px 10px;
+  background: rgba(0,0,0,0.6);
+}
+.catering .goods-menu {
+  background: #e3bc47;
+  padding: 0;
+}
+.catering .goods-menu__item {
+  padding-top: 145px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 201px;
+  margin-left: 55px;
+  height: 212px;
+}
+.catering .goods-menu__item img {
+  top: calc(50% - 40.5px);
+}
+.catering .goods-list__item p {
+  letter-spacing: 0.6px;
+}

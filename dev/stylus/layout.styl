@@ -1,0 +1,159 @@
+html,
+body
+  background-color #ffffff
+  
+html
+  touch-action: manipulation
+  visibility visible !important
+  opacity 1 !important
+  -webkit-text-size-adjust none
+  +a($d)
+    font-size 1px
+  +btw($t, $d)
+    font-size (100 / 1024)vw
+  +btw($m, $t)
+    font-size (100 / 768)vw
+  +b($m)
+    font-size (100 / 320)vw  
+  &.-dragged
+    user-select none
+    pointer-events none
+  &:before,
+  &:after
+    display none !important
+
+body
+  font 14px/1.571429em "Roboto", Arial, sans-serif
+  color $black
+  
+button
+  font-family "Roboto", Arial, sans-serif
+    
+svg
+  transition-duration $speed
+  transition-property fill, stroke, color
+  &:not(:root)
+    overflow hidden
+
+svg:not(.-no-restyle)
+  fill currentcolor 
+  [fill]
+    fill currentcolor
+  [stroke]
+    stroke currentcolor
+  
+a
+  color $blue
+  transition-duration $speed
+  transition-property color  
+  svg
+    transition none
+  &:link
+    text-decoration none
+  &:hover
+    text-decoration underline
+  &:visited
+    text-decoration none
+  &:active
+    text-decoration none
+  &[href*="tel:"]
+    white-space nowrap
+
+.wrapper
+  width 100% 
+  overflow hidden
+  position relative
+  //min-width 1406px//1280px//
+.container
+  margin auto
+  max-width 1446px//1240px//
+  position relative
+  width 100%  
+  box-sizing border-box
+  +a($m)
+    padding 0 40px
+  +b($m)
+    padding 0 20px
+    
+    
+hr
+  display block
+  padding 0
+  margin 0
+  border none
+  background-color $bluee5
+  height 1px  
+  &.-bold
+    height 6px
+    border-radius 3px
+    background-color $blue3e 
+    +b($m)
+      margin 0 -3px 
+      
+img
+  &.-grayscale,
+  &.-grayscale-hoverable
+    filter grayscale(100%)
+  &.-grayscale-hoverable
+    transition filter $speed
+    &:hover
+      filter none
+
+.hidden
+  display none !important
+.hidden-below-d
+  +b($d)
+    display none !important
+.hidden-below-1160
+  +b(1200px)
+    display none !important
+.hidden-above-d
+  +a($d)
+    display none !important
+.hidden-below-t
+  +b($t)
+    display none !important
+.hidden-below-830
+  +b(830px)
+    display none !important
+.hidden-above-t
+  +a($t)
+    display none !important
+.hidden-below-m
+  +b($m)
+    display none !important
+.hidden-above-m
+  +a($m)
+    display none !important
+.hidden-between-m-t
+  +btw($m, $t)
+    display none !important
+.hidden-above-600
+  +a(600px)
+    display none !important
+.hidden-below-600
+  +b(600px)
+    display none !important
+.hidden-above-320
+  +a(320px)
+    display none !important
+.hidden-below-320
+  +b(320px)
+    display none !important
+    
+.nobr
+  white-space nowrap
+  
+.text-warning
+  color $redf4 
+  
+.js-tooltip
+  display inline-block
+  font-size 0
+  line-height 0
+  html.no-mobile &
+    cursor help
+  html.mobile &
+    cursor pointer
+.new-site-hidden
+  display none !important

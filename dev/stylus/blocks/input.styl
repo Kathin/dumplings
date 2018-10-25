@@ -1,0 +1,179 @@
+.input
+  border-radius 27.5px
+  box-sizing border-box
+  position relative
+  transition border-color $speed
+  background none
+  box-sizing border-box
+  padding 18px 34px
+  font-size 0
+  line-height 0
+  &.-error
+    .input__error
+      display block
+  &.-area
+    border-radius 11px
+  &__placeholder
+    position absolute
+    top 0
+    left 0 
+    padding 19px 34px
+    font-size 16px
+    line-height 16px
+    &.hidden
+      display none      
+  input
+    border none
+    outline none
+    -webkit-appearance none
+    font-size 16px
+    line-height 17px
+    height 17px
+    background none
+    width 100%
+    &::-ms-clear
+      display none 
+    &:-webkit-autofill
+      -webkit-text-fill-color #ffffff
+      -webkit-box-shadow 0 0 0px 1000px transparent inset
+      transition background-color 5000s ease-in-out 0s 
+      background none  
+      background-color transparent
+    &:focus
+      ~ .input__placeholder
+        display none
+    &.purple
+      color #fff
+      &:-webkit-autofill  
+        -webkit-text-fill-color $purple
+  textarea
+    border none
+    outline none
+    -webkit-appearance none
+    font-size 16px
+    line-height 17px    
+    background none
+    width 100%
+    overflow hidden
+    font-family "Roboto", Arial, sans-serif
+    &::-ms-clear
+      display none 
+    &:-webkit-autofill
+      -webkit-text-fill-color #ffffff
+      -webkit-box-shadow 0 0 0px 1000px transparent inset
+      transition background-color 5000s ease-in-out 0s 
+      background none  
+    &:focus
+      ~ .input__placeholder
+        display none
+    &.purple
+      color #fff
+      &:-webkit-autofill  
+        -webkit-text-fill-color $purple
+  &__error
+    position absolute
+    bottom -25px
+    font-size 14px
+    line-height 16px
+    color $purple
+    left 0
+    display none
+button
+  outline none
+  -webkit-appearance none
+  border none
+  &::-ms-clear
+    display none 
+    
+.control 
+  position relative
+  cursor pointer
+  font-size 0
+  line-height 0
+  width 100%
+  white-space nowrap
+  &-label__input    
+    &.-error
+      .input__error
+        display block
+  .input__error
+    position absolute
+    bottom -16px
+    font-size 14px
+    line-height 16px
+    color #fff
+    left 0
+    display none
+  &__box
+    display inline-block
+    position relative
+    text-align center
+    font-size 0
+    border-radius 3px    
+    border 1px solid #fff
+    background transparent
+    vertical-align top
+    margin-top 5px
+    width 12px
+    height 12px
+    line-height 12px
+    box-sizing border-box
+  input
+    position absolute
+    top 0
+    left 0
+    z-index -1
+    opacity 0.01
+    &[type="checkbox"]
+      ~ .control__box
+        border-radius 3px
+        img
+          display inline-block
+          vertical-align middle
+          opacity 0          
+          transition opacity $speed
+          width 10px
+          height 10px
+      &:checked
+        ~ .control__box
+          img
+            opacity 1
+        ~ .control__value
+          opacity 1
+    &:checked
+      ~ .control__image
+        &:before
+          opacity 1
+    &:disabled
+      ~ .control__box
+        background-color #f5f5f5
+  &__value
+    display inline-block
+    transition opacity $speed
+    white-space nowrap
+    vertical-align middle
+    position relative
+    color #fff
+    +a($m)
+      margin-left 20px
+    +b($m)
+      margin-left 10px
+    &-text
+      display inline-block
+      font-size 16px
+      line-height 24px     
+      vertical-align middle
+      a
+        color #fff
+        opacity 0.6
+.input__error.-connect
+  position relative
+  bottom -20px
+  font-size 16px
+  line-height 16px
+  color #fff
+  left 0
+  display block
+
+  
+  

@@ -1,0 +1,77 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.delicacies .header {
+  background-image: url("../img/delicacies/bg.png");
+}
+.delicacies .header__title {
+  margin-top: 165px;
+  letter-spacing: 0.2px;
+  padding: 13px 114px 10px;
+  background: rgba(0,0,0,0.6);
+}
+.delicacies .goods-menu {
+  background: #7abb5c;
+  padding: 0;
+}
+.delicacies .goods-menu__item {
+  padding-top: 124px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 190px;
+  margin-left: 69px;
+  height: 200px;
+}
+.delicacies .goods-menu__item img {
+  top: calc(50% - 40.5px);
+}
+.delicacies .goods-list__item-img {
+  display: block;
+  width: 100%;
+  height: 342px;
+}
+.delicacies .goods-list__item-info {
+  display: block;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  top: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.delicacies .goods-list__item-info h3 {
+  display: inline-block;
+  width: 578px;
+  text-align: left;
+  padding: 0 125px 0 162px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+  height: 128px;
+}
+.delicacies .goods-list__item-info h3 + .goods-list__item-info-part {
+  padding-top: 0;
+}
+.delicacies .goods-list__item-info-part {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}

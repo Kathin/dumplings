@@ -1,0 +1,237 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.input {
+  border-radius: 27.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-transition: border-color 150ms;
+  -o-transition: border-color 150ms;
+  transition: border-color 150ms;
+  background: none;
+  box-sizing: border-box;
+  padding: 18px 34px;
+  font-size: 0;
+  line-height: 0;
+}
+.input.-error .input__error {
+  display: block;
+}
+.input.-area {
+  border-radius: 11px;
+}
+.input__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 19px 34px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.input__placeholder.hidden {
+  display: none;
+}
+.input input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 17px;
+  height: 17px;
+  background: none;
+  width: 100%;
+}
+.input input::-ms-clear {
+  display: none;
+}
+.input input:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: none;
+  background-color: transparent;
+}
+.input input:focus ~ .input__placeholder {
+  display: none;
+}
+.input input.purple {
+  color: #fff;
+}
+.input input.purple:-webkit-autofill {
+  -webkit-text-fill-color: #6841f2;
+}
+.input textarea {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 17px;
+  background: none;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.input textarea::-ms-clear {
+  display: none;
+}
+.input textarea:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: none;
+}
+.input textarea:focus ~ .input__placeholder {
+  display: none;
+}
+.input textarea.purple {
+  color: #fff;
+}
+.input textarea.purple:-webkit-autofill {
+  -webkit-text-fill-color: #6841f2;
+}
+.input__error {
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6841f2;
+  left: 0;
+  display: none;
+}
+button {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+}
+button::-ms-clear {
+  display: none;
+}
+.control {
+  position: relative;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+.control-label__input.-error .input__error {
+  display: block;
+}
+.control .input__error {
+  position: absolute;
+  bottom: -16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  left: 0;
+  display: none;
+}
+.control__box {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 0;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: transparent;
+  vertical-align: top;
+  margin-top: 5px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.control input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.01;
+}
+.control input[type="checkbox"] ~ .control__box {
+  border-radius: 3px;
+}
+.control input[type="checkbox"] ~ .control__box img {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 150ms;
+  -o-transition: opacity 150ms;
+  transition: opacity 150ms;
+  width: 10px;
+  height: 10px;
+}
+.control input[type="checkbox"]:checked ~ .control__box img {
+  opacity: 1;
+}
+.control input[type="checkbox"]:checked ~ .control__value {
+  opacity: 1;
+}
+.control input:checked ~ .control__image:before {
+  opacity: 1;
+}
+.control input:disabled ~ .control__box {
+  background-color: #f5f5f5;
+}
+.control__value {
+  display: inline-block;
+  -webkit-transition: opacity 150ms;
+  -o-transition: opacity 150ms;
+  transition: opacity 150ms;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .control__value {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .control__value {
+    margin-left: 10px;
+  }
+}
+.control__value-text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.control__value-text a {
+  color: #fff;
+  opacity: 0.6;
+}
+.input__error.-connect {
+  position: relative;
+  bottom: -20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  left: 0;
+  display: block;
+}

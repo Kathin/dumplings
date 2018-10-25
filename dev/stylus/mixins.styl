@@ -1,0 +1,34 @@
+ellipsis()
+  text-overflow ellipsis
+  white-space nowrap
+  position relative
+  overflow hidden
+ 
+amh($speed = $speed)
+  transition max-height $speed
+  max-height 0
+  overflow hidden
+  position relative 
+
+preloader()
+  position relative
+  &:before
+    content "" 
+    display block
+    position absolute
+    top 50%
+    left 50%
+    border 3px solid rgba($blue3e, 0.25)
+    border-bottom-color $blue3e 
+    z-index 2147483647
+    border-radius 50%
+    animation spin 1s infinite linear
+    box-sizing border-box
+    +a($m)
+      width 30px
+      height 30px
+      margin -15px
+    +b($m)
+      width 24px
+      height 24px
+      margin -12px

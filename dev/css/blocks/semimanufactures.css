@@ -1,0 +1,47 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.semimanufactures .header {
+  background-image: url("../img/semimanufactures/bg.png");
+}
+.semimanufactures .header__title {
+  margin-top: 165px;
+  letter-spacing: 0.8px;
+  padding: 13px 30px 10px;
+  background: rgba(0,0,0,0.6);
+}
+.semimanufactures .goods-menu {
+  background: #3cc;
+  padding: 33px 0 0;
+}
+.semimanufactures .goods-menu__item {
+  padding-top: 128px;
+  margin-bottom: 19px;
+}
+.semimanufactures .goods-menu__item img {
+  left: -14px;
+}
+.semimanufactures .goods-list__item p {
+  width: 353px;
+}
+.semimanufactures .goods-list__item-img img {
+  top: 41px;
+  left: -39px;
+}

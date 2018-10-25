@@ -1,0 +1,308 @@
+extends /layout
+include /header
+
+block main
+  .main-page
+    .preview
+      .container
+        .preview__left
+          .preview__subtitle НОВАЯ ПЛАТФОРМА РАСШИРЕННОЙ РЕАЛЬНОСТИ
+          h2.preview__title Создавайте удивительные вещи с ARLook
+          .preview__text Самый простой способ создания дополненной реальности
+          .preview__form
+            form(action="json/form-success.json")
+              .input.preview__form-input
+                .input__error
+                input(type="email", name="email")
+                .input__placeholder Ваш E-mail
+              button.preview__form-button Зарегистрироваться
+        .preview__right
+          .preview__img
+            img(src="img/preview.png")
+        a.preview__arrow(href="#principles")
+          img(src="img/arrowdown.png")
+    #principles.principles
+      .container
+        h2.principles__title Принципы работы #[br]дополненной реальности
+        .principles__list
+          .principles__list-item
+            .principles__list-item-img
+              img(src="img/principles1.png")
+            h4.principles__list-item-title Цифровая информация
+            .principles__list-item-text Практически любое изображение, окружающее мир или даже предмет, может быть дополнен цифровой информацией.
+          .principles__list-item
+            .principles__list-item-img
+              img(src="img/principles2.png")
+            h4.principles__list-item-title Умная система 
+            .principles__list-item-text С помощью камеры смартфона система определяет изображение или объект, либо определяет плоскости (стены и пол).
+          .principles__list-item
+            .principles__list-item-img
+              img(src="img/principles3.png")
+            h4.principles__list-item-title Дополненная реальность
+            .principles__list-item-text Реальный мир дополняется цифровыми объектами.
+          .principles__list-item
+            .principles__list-item-img
+              img(src="img/principles4.png")
+            h4.principles__list-item-title Инновация
+            .principles__list-item-text Подобные системы изменят то, как мы пользуемся компьютерами и цифровыми устройствами.
+    .using
+      .container
+        .using__wrap
+          h2.using__title Как  пользоваться сервисом
+          .using__tabs
+            .using__tabs-titles
+              .using__tabs-titles-item 1. Загрузка маркера
+              .using__tabs-titles-item.active 2. Загрузка контента             
+              .using__tabs-titles-item 3. Размер видео
+              .using__tabs-titles-item 4. Приложение
+            .using__tabs-content
+              .using__tabs-content-item
+                .using__tabs-content-about
+                  h3.using__tabs-content-about-title Загрузка маркера
+                  .using__tabs-content-about-text
+                    | Загрузка маркера
+                .using__tabs-content-img 
+                  img(src="img/upload.png")
+                .using__tabs-content-arrow Загружаем маркер
+              .using__tabs-content-item.active
+                .using__tabs-content-about
+                  h3.using__tabs-content-about-title Загрузка контента
+                  .using__tabs-content-about-text
+                    | Загрузите необходимый контент, который вы хотите отобразить  на маркере. Мы поддерживаем большинство форматов видео, аудио и фото. 3D модели и 360 видео и фото в разработке.
+                .using__tabs-content-img 
+                  img(src="img/upload.png")
+                .using__tabs-content-arrow Загружаем контент
+              .using__tabs-content-item
+                .using__tabs-content-about
+                  h3.using__tabs-content-about-title Размер видео
+                  .using__tabs-content-about-text
+                    | Устанавливаем размер видео
+                .using__tabs-content-img 
+                  img(src="img/upload.png")
+                .using__tabs-content-arrow Устанавливаем размер видео
+              .using__tabs-content-item
+                .using__tabs-content-about
+                  h3.using__tabs-content-about-title Приложение
+                  .using__tabs-content-about-text
+                    | Готовое приложение
+                .using__tabs-content-img 
+                  img(src="img/upload.png")
+                .using__tabs-content-arrow Приложение
+    .sphere
+      .container
+        h2.sphere__title Выберите свою сферу
+        .sphere__text Выберите свою сферу, чтобы узнать, как использовать дополненную реальность в вашем бизнесе.
+        .sphere__wrap
+          .sphere__list
+            .sphere__list-item
+              .sphere__list-item-img
+                img(src="img/sphere1.png")
+              h4.sphere__list-item-title Фотографы
+              .sphere__list-item-text Свадебные и прочие фотографы. 
+            .sphere__list-item
+              .sphere__list-item-img
+                img(src="img/sphere2.png")
+              h4.sphere__list-item-title Издательство
+              .sphere__list-item-text Издатели печатной продукции-книг, #[br]журналов, газет и т.п. 
+            .sphere__list-item
+              .sphere__list-item-img
+                img(src="img/sphere3.png")
+              h4.sphere__list-item-title Ритейл 
+              .sphere__list-item-text Магазины розничной торговли: #[br]упаковка, баннеры, витрины и т.п.
+    .registration
+      .container
+        h2.registration__title Зарегистрироваться #[br]в конструкторе
+        .registration__text Создайте свою дополненную реальность!
+        .registration__form
+          form(action="json/form-success.json")
+            .input.registration__form-input
+              .input__error
+              input(type="email", name="email")
+              .input__placeholder Ваш E-mail
+            .input.registration__form-input
+              .input__error
+              input(type="password", name="password")
+              .input__placeholder Пароль
+            button.registration__form-button Зарегистрироваться
+    .features
+      .container
+        h2.features__title Особенности платформы
+        .features__wrap
+          .features__list
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features1.png")
+              h4.features__list-item-title Простота #[br]в использовании
+              .features__list-item-text
+                | Лёгкое создание #[br]
+                | дополненной реальности.
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features2.png")
+              h4.features__list-item-title Добавление видео #[br]на маркер
+              .features__list-item-text
+                | Загружайте напрямую видео #[br]
+                | с youtube или vimeo.
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features3.png")
+              h4.features__list-item-title Гибкие настройки #[br]приватности
+              .features__list-item-text
+                | Возможность использовать #[br]
+                | специальные коды для доступа #[br]
+                | к контенту. 
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features4.png")
+              h4.features__list-item-title 3D-модели
+              .features__list-item-text
+                | С лёгкостью размещайте#[br] 
+                | анимированные 3D-модели.
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features5.png")
+              h4.features__list-item-title Галерея изображений
+              .features__list-item-text
+                | С поддержкой слайд-шоу #[br]
+                | и фоновой музыкой. 
+            .features__list-item
+              .features__list-item-img
+                img(src="img/features6.png")
+              h4.features__list-item-title Аудиозаписи
+              .features__list-item-text
+                | Прикрепляйте аудиозаписи #[br]
+                | к любому изображению.
+        .features__anons
+          .features__anons-title Конструктором ARLook #[br]уже пользуются
+          img(src="img/arrowto.png")
+          .features__anons-number 12 000
+            span компаний
+    .prices
+      .container
+        .h2.prices__title Стоимость
+        .prices__text Цены на пользование сервисом. #[br]Скидки студентам и учебным заведениям
+        .prices__tabs
+          .prices__tabs-titles
+            .prices__tabs-titles-item.active #[span.hidden-below-m Цены для физ. лиц] #[span.hidden-above-m Физ. лицам]
+            .prices__tabs-titles-item #[span.hidden-below-m Цены для юр. лиц]#[span.hidden-above-m Юр. лицам]
+          .prices__tabs-content
+            .prices__tabs-content-item.active
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Начальный
+                .prices__tabs-content-block-text 5 маркеров
+                .prices__tabs-content-block-price Бесплатно
+                .prices__tabs-content-block-list 
+                  img(src="img/key.png")
+                  | Хранение - 1 месяц
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | 100 сканов на маркер
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Базовый
+                .prices__tabs-content-block-text 20 маркеров
+                .prices__tabs-content-block-price 100 рублей
+                .prices__tabs-content-block-list 
+                  img(src="img/key.png")
+                  | Хранение - 1 год
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | 1000 сканов на маркер
+                .prices__tabs-content-block-list
+                  img(src="img/ring.png")
+                  | Техподдержка на email
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Продвинутый
+                .prices__tabs-content-block-text Неограниченно
+                .prices__tabs-content-block-price 400 рублей
+                .prices__tabs-content-block-list
+                  img(src="img/key.png")
+                  | Хранение - неограничено
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | Сканов неограничено
+                .prices__tabs-content-block-list
+                  img(src="img/ring.png")
+                  | Поддержка 24/7
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+            .prices__tabs-content-item
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Начальный
+                .prices__tabs-content-block-text 5 маркеров
+                .prices__tabs-content-block-price 1000 рублей 
+                .prices__tabs-content-block-list 
+                  img(src="img/key.png")
+                  | Хранение - 1 месяц
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | 100 сканов на маркер
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Базовый
+                .prices__tabs-content-block-text 20 маркеров
+                .prices__tabs-content-block-price 2000 рублей
+                .prices__tabs-content-block-list 
+                  img(src="img/key.png")
+                  | Хранение - 1 год
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | 1000 сканов на маркер
+                .prices__tabs-content-block-list
+                  img(src="img/ring.png")
+                  | Техподдержка на email
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+              .prices__tabs-content-block
+                h3.prices__tabs-content-block-title Продвинутый
+                .prices__tabs-content-block-text Неограниченно
+                .prices__tabs-content-block-price 5000 рублей
+                .prices__tabs-content-block-list
+                  img(src="img/key.png")
+                  | Хранение - неограничено
+                .prices__tabs-content-block-list
+                  img(src="img/scan.png")
+                  | Сканов неограничено
+                .prices__tabs-content-block-list
+                  img(src="img/ring.png")
+                  | Поддержка 24/7
+                a.prices__tabs-content-block-button(href="") Попробовать сейчас
+    .summary
+      .container
+        .summary__partners
+          h2.summary__partners-title Наши партнеры
+          .summary__partners-list
+            .summary__partners-list-item
+              img(src="img/shoptalk.png")
+            .summary__partners-list-item
+              img(src="img/propeller.png")
+            .summary__partners-list-item
+              img(src="img/microsoft.png")
+            .summary__partners-list-item
+              img(src="img/chief.png")
+            .summary__partners-list-item
+              img(src="img/techcrunch.png")
+            .summary__partners-list-item
+              img(src="img/dell.png")
+        .summary__form
+          h2.summary__form-title Нужно нестандартное решение? 
+          .summary__form-text Напишите нам, и мы воплотим любые ваши цифровые фантазии!
+          form(action="json/form-success.json")
+            .input.summary__form-input
+              .input__error
+              input(type="text", name="name")
+              .input__placeholder Ваше имя
+            .input.summary__form-input
+              .input__error
+              input(type="text", name="contact")
+              .input__placeholder Телефон или email
+            label.control-label__input
+              .control
+                .input__error
+                input(type="checkbox", name="conditions")
+                .control__box
+                  img(src="img/checkmark.svg")
+                .control__value
+                  span.control__value-text Я согласен 
+                    a(href="text-page.html" target="blank") с условиями обработки #[br]персональных данных
+            button.summary__form-button Отправить
+  

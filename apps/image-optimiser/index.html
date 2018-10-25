@@ -1,0 +1,15 @@
+<input type="file" name="file" id="input" multiple>
+<ul id="list"></ul>
+<script>
+  var input = document.getElementById('input')
+
+  function handle(e) {
+    console.log(e.target.files)
+  }
+
+  function upload(file) {
+
+  }
+
+  input.addEventListener('change', handle, false)
+</script>

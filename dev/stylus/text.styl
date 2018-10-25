@@ -1,0 +1,113 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+  font-weight bold
+   
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin 0 
+
+h1,
+.h1
+  letter-spacing -0.03em
+  // max-width 700px
+  +a($m)
+    font-size 36px
+    line-height 44px
+    margin 0 0 25px
+    padding-right 150px
+  +b($m)
+    font-size 20px
+    line-height 26px
+    margin 19px 0 18px
+    br
+      display none
+  span
+    font-weight 300
+    letter-spacing -1.12px  
+
+h2,
+.h2
+  font-weight bold
+  color $black
+  +a($m)
+    line-height 55px
+    font-size 45px
+  +b($m)
+    line-height 33px
+    font-size 27px
+
+h3,
+.h3
+  +a($m)
+    font-size 24px
+    line-height 33px
+  +b($m)
+    font-size 18px
+    line-height 24px
+
+h4,
+.h4
+  line-height 27px
+  +a($d)
+    font-size 20px
+  +b($d)
+    font-size 18px
+
+h5,
+.h5
+  font-size 16px
+  text-transform uppercase
+  margin 47px 0 15px 
+
+h6,
+.h6
+  font-size 16px
+
+.text
+  &.-flow
+    margin 20px 0 
+  &.-indention-top
+    display block
+    padding-top 15px
+  p
+    line-height 19px
+    margin 8px 0 
+  h2,
+  h3,
+  h5,
+  h6
+    margin 2em 0 1em
+  h4
+    margin 26px 0 11px
+    +b($d)
+      line-height 22px
+  img
+    margin-bottom 8px
+    &[align="left"]
+      margin-right 25px
+    &[align="right"]
+      margin-left 25px
+  > div
+    margin-top 50px
+    margin-bottom 50px
+  hr
+    margin-top 25px
+    margin-bottom 25px  
+  > :first-child
+    margin-top 0 !important
+  > :last-child
+    margin-bottom 0 !important

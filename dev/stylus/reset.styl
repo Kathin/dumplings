@@ -1,0 +1,87 @@
+// grid
+
+html,
+body
+  width 100% 
+  height 100% 
+  margin 0
+  padding 0
+   
+body
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  font-smooth always
+  text-size-adjust 100%
+      
+// html5
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+main,
+section
+  display block
+  padding 0
+  margin 0
+  border none 
+  
+// text
+
+table,
+tr,
+th,
+td
+  padding 0px
+  border-collapse collapse
+  
+p
+  margin 0
+  padding 0 
+
+a
+  img
+    border none
+  &[href*="tel:"]
+    white-space nowrap
+  
+// forms
+
+input[type="search"],
+input[type="number"],
+input[type="tel"]
+  -webkit-appearance none
+  -moz-appearance textfield
+  appearance textfield
+  margin 0
+  border-radius 0
+  
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button
+  -webkit-appearance none
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button 
+  -webkit-appearance none 
+  margin 0
+  
+button::-moz-focus-inner
+  border none
+  
+input,
+textarea,
+button
+  margin 0px
+  padding 0px
+  
+form,
+fieldset,
+label
+  margin 0px
+  padding 0px
+  text-decoration none
+  font-style normal
+  border none

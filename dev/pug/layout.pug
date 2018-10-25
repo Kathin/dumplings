@@ -1,0 +1,86 @@
+include /mixins
+include /input
+
+doctype html
+<!--[if lt IE 7]><html lang="ru" class="ie6 no-js" style="visibility: hidden;"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="ie7 no-js" style="visibility: hidden;"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="ie8 no-js" style="visibility: hidden;"><![endif]-->
+<!--[if IE 9]><html lang="ru" class="ie9 no-js" style="visibility: hidden;"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="ru" class="no-js" style="visibility: hidden;"><![endif]-->
+  head
+    meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    meta(name="keywords", content="")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width")
+    script(src="js/vendor.js")    
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&amp;subset=cyrillic,cyrillic-ext", rel="stylesheet")
+    if env === 'dev'
+      link(rel="stylesheet", href="css/reset.css")
+      link(rel="stylesheet", href="css/layout.css")
+      link(rel="stylesheet", href="css/text.css")
+      each stylesheet in css
+        link(rel="stylesheet", href= stylesheet)
+    else
+      link(rel="stylesheet", href="css/style.min.css")
+    script(src="js/script.js")
+    title ARLine
+  body
+    .wrapper
+      .container
+        if ['index'].indexOf(pagename) === -1
+          .topnav 
+            a.topnav__logo(href="/")
+              img(src="img/logo.png")
+            .topnav__burger#pull
+              img(src="img/burger.png")
+            .topnav__list 
+              a.topnav__list-item(href="#") Конструктор
+              a.topnav__list-item(href="#") Особенности
+              a.topnav__list-item.-active(href="gallery.html") Галерея
+              a.topnav__list-item(href="support.html") Поддержка
+              a.topnav__list-item.-enter(href="registration.html") Войти
+              .topnav__list-close
+                img(src="img/cross.png")
+        else
+          .topnav.-main 
+            a.topnav__logo(href="/")
+              img(src="img/logo.png") 
+            .topnav__burger#pull
+              img(src="img/burger.png")
+            .topnav__list 
+              a.topnav__list-item(href="#") Конструктор
+              a.topnav__list-item(href="#") Особенности
+              a.topnav__list-item(href="gallery.html") Галерея
+              a.topnav__list-item(href="support.html") Поддержка
+              a.topnav__list-item.-enter(href="registration.html") Войти
+              .topnav__list-close
+                img(src="img/cross.png")
+
+      .content
+        block main
+        .footer
+          .container
+            .footer__info   
+              a.footer__logo(href="/")
+                img(src="img/logo.png") 
+              p Самый простой способ создания дополненной реальности   
+              .footer__contacts +1 123 456 78 90
+              .footer__contacts
+                a(href="mailto:hello@arline.io") hello@arline.io       
+            .footer__menu
+              .footer__menu-list
+                a.footer__menu-list-item(href="#") Конструктор
+                a.footer__menu-list-item(href="#") Особенности
+                a.footer__menu-list-item(href="gallery.html") Галерея
+                a.footer__menu-list-item(href="support.html") Поддержка
+              .footer__menu-social
+                a.footer__menu-social-item(href="#")
+                  img(src="img/vk_.png")
+                a.footer__menu-social-item(href="#")
+                  img(src="img/fb_.png")
+                a.footer__menu-social-item(href="#")
+                  img(src="img/inst_.png")
+
+                  
+                

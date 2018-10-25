@@ -1,0 +1,44 @@
+mixin input(settings)
+  -
+    settings = Object.assign({
+      tag: 'input',
+      rows: 4,
+      type: 'text',
+      name: '',
+      placeholder: '',
+      errorText: '',
+      value: undefined,
+      className: undefined,
+      mask: undefined,
+      model: undefined
+    }, settings);
+  .input(class= settings.className)
+    if settings.icon
+      .input__icon
+        +svg(settings.icon)
+    .input__status
+      +svg('input__error')
+      +svg('input__success')
+    .input__error
+      = settings.errorText
+    if settings.tag === 'input'
+      input(
+        type= settings.type,
+        name= settings.name,
+        placeholder= settings.placeholder,
+        value= settings.value,
+        class= settings.autofocus ? 'js-autofocus' : false,
+        data-validate= settings.validate,
+        data-mask= settings.mask,
+        v-model= settings.model
+      )
+    else
+      textarea(
+        name= settings.name,
+        placeholder= settings.placeholder,
+        rows= settings.rows,
+        class= settings.autofocus ? 'js-autofocus' : false,
+        data-validate= settings.validate,
+        data-mask= settings.mask,
+        v-model= settings.model
+      )= settings.value

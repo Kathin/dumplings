@@ -1,0 +1,6 @@
+mixin labels(labels)
+  - labels = labels || ['bestprice', 'stock', 'instockspb', 'leader', 'new', 'promo', 'reserve', 'soon']
+  span.labels
+    each label in labels
+      span.labels__item
+        img(src= 'img/labels/' + label + '.svg')

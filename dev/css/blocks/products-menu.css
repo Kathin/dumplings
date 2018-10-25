@@ -1,0 +1,106 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.products-menu {
+  display: block;
+  width: 100%;
+}
+.products-menu__row {
+  display: table;
+  width: 100%;
+}
+.products-menu__row:first-child .products-menu__row-item {
+  width: calc(100% / 3);
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(1) {
+  background: #3cc;
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(1) img {
+  top: 40px;
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(2) {
+  background: #0cf;
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(2) img {
+  top: 24px;
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(3) {
+  background: #993;
+}
+.products-menu__row:first-child .products-menu__row-item:nth-child(3) img {
+  top: 50px;
+  left: -20px;
+}
+.products-menu__row:last-child .products-menu__row-item {
+  width: calc(100% / 4);
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(1) {
+  background: #e3bc47;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(1) img {
+  top: 30px;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(2) {
+  background: #7abb5c;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(2) img {
+  top: 67px;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(3) {
+  background: #0d83c7;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(3) img {
+  top: 47px;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(4) {
+  background: #e17272;
+}
+.products-menu__row:last-child .products-menu__row-item:nth-child(4) img {
+  top: 75px;
+}
+.products-menu__row-item {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 141px;
+  position: relative;
+  height: 239px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.products-menu__row-item a {
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+.products-menu__row-item a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.products-menu__row-item img {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}

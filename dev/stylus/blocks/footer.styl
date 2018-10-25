@@ -1,0 +1,106 @@
+.footer
+  color $black
+  //position absolute
+  //width 100%
+  //bottom 0
+  padding-bottom 60px
+  height 220px
+  box-sizing border-box
+  &:after
+    content ''
+    width 100%
+    clear both
+    display block
+    float none
+    height 0px
+    position relative
+  a 
+    &:hover
+      text-decoration none
+  &__info
+    display inline-block
+    max-width 270px
+    p 
+      color $gray
+      font-size 16px
+      line-height 21px
+  &__logo
+    color $purple
+    font-size 31px
+    line-height 31px
+    font-weight bold
+    margin-top -24px  
+    width 317px     
+    &:hover
+      opacity 0.7
+    img 
+      width 100%
+  &__contacts  
+    font-weight bold
+    font-size 18px
+    line-height 24px
+    margin-top 15px
+    a 
+      color $black 
+      &:hover
+        text-decoration none
+        color $purple
+    & + &
+      margin-top 0
+  &__menu
+    float right  
+    margin-top 19px
+    +a($t)
+      min-width 630px  
+    +btw($m, $t)
+      min-width 250px 
+      max-width 630px
+      width calc(100% - 350px)
+    +b($m)
+      width 100%
+      float left
+    &-list
+      display block
+      text-align left
+      padding-bottom 21px
+      +b($t)
+        margin-left -22.5px
+      &-item
+        color $black
+        font-size 16px
+        line-height 41px
+        display inline-block
+        vertical-align top 
+        +a($t)
+          & + &
+            margin-left 45px
+        +b($t)
+          padding 0 22.5px 
+        &:hover
+          color $purple
+    &-social
+      display block
+      padding-top 36px
+      border-top 1px solid #dcdcdc
+      &-item
+        display inline-block
+        width 54px
+        height 54px
+        border 1px solid #414042
+        border-radius 54px
+        position relative
+        box-sizing border-box
+        opacity 0.36
+        margin-right 28px
+        transition all $speed
+        &:hover
+          opacity 1
+        img
+          position absolute
+          top 50%
+          transform translateY(-50%)
+          left 0
+          right 0
+          margin auto
+        
+          

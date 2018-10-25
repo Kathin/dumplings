@@ -1,0 +1,48 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.snacks .header {
+  background-image: url("../img/snacks/bg.png");
+}
+.snacks .header__title {
+  margin-top: 165px;
+  letter-spacing: 0.2px;
+  padding: 13px 112px 10px;
+  background: rgba(0,0,0,0.6);
+}
+.snacks .goods-menu {
+  background: #0d83c7;
+  padding: 0;
+  padding-bottom: 17px;
+}
+.snacks .goods-menu__item {
+  padding-top: 145px;
+  margin-bottom: 12px;
+  margin-top: 19px;
+  width: 180px;
+  margin-left: 83px;
+  height: 200px;
+}
+.snacks .goods-menu__item:nth-child(4n+1) {
+  margin-left: 0;
+}
+.snacks .goods-menu__item img {
+  top: calc(50% - 20px);
+}

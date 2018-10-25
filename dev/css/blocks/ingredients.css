@@ -1,0 +1,47 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.ingredients .header {
+  background-image: url("../img/ingredients/bg.png");
+}
+.ingredients .header__title {
+  margin-top: 165px;
+  letter-spacing: 0.1px;
+  padding: 13px 43px 10px;
+  background: rgba(0,0,0,0.6);
+}
+.ingredients .goods-menu {
+  background: #993;
+  padding: 33px 0 18px;
+}
+.ingredients .goods-menu__item {
+  padding-top: 144px;
+  margin-bottom: 34px;
+}
+.ingredients .goods-menu__item img {
+  left: -14px;
+}
+.ingredients .goods-list__item-img img {
+  top: 41px;
+  left: -39px;
+}
+.ingredients .goods-list__item p {
+  letter-spacing: 0.6px;
+}
