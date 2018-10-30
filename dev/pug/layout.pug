@@ -28,38 +28,23 @@ doctype html
   body
     .wrapper
       .container
-        if ['index'].indexOf(pagename) === -1
-          .topnav 
-            a.topnav__logo(href="/")
-              img(src="img/logo.png")
-            .topnav__burger#pull
-              img(src="img/burger.png")
-            .topnav__list 
-              a.topnav__list-item(href="#") Конструктор
-              a.topnav__list-item(href="#") Особенности
-              a.topnav__list-item.-active(href="gallery.html") Галерея
-              a.topnav__list-item(href="support.html") Поддержка
-              a.topnav__list-item.-enter(href="registration.html") Войти
-              .topnav__list-close
-                img(src="img/cross.png")
-        else
-          .topnav.-main 
-            a.topnav__logo(href="/")
-              img(src="img/logo.png") 
-            .topnav__burger#pull
-              img(src="img/burger.png")
-            .topnav__list 
-              a.topnav__list-item(href="#") Конструктор
-              a.topnav__list-item(href="#") Особенности
-              a.topnav__list-item(href="gallery.html") Галерея
-              a.topnav__list-item(href="support.html") Поддержка
-              a.topnav__list-item.-enter(href="registration.html") Войти
-              .topnav__list-close
-                img(src="img/cross.png")
-
+        .topnav 
+          .topnav__burger#pull
+            img(src="img/burger.png")
+          a.topnav__phone(hfer="#") Обратный звонок #[br]для оптовиков
+          .topnav__list 
+            a.topnav__list-item(href="#") Продукты
+            a.topnav__list-item(href="#") Преимущества
+            a.topnav__list-item.-active(href="#") Что внутри?
+          a.topnav__logo(href="/")
+            img(src="img/logo.png")            
+          .topnav__list 
+            a.topnav__list-item(href="#") Секреты #[br]приготовления
+            a.topnav__list-item(href="registration.html") ГДЕ КУПИТЬ
+            a.topnav__list-item(href="registration.html") Контакты
       .content
         block main
-        .footer
+        //-.footer
           .container
             .footer__info   
               a.footer__logo(href="/")

@@ -18,9 +18,63 @@
             transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat Thin'), local('Akrobat-Thin'), url("../fonts/Akrobatthin.woff2") format('woff2'), url("../fonts/Akrobatthin.woff") format('woff'), url("../fonts/Akrobatthin.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight'), url("../fonts/Akrobatextralight.woff2") format('woff2'), url("../fonts/Akrobatextralight.woff") format('woff'), url("../fonts/Akrobatextralight.ttf") format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat Light'), local('Akrobat-Light'), url("../fonts/Akrobatlight.woff2") format('woff2'), url("../fonts/Akrobatlight.woff") format('woff'), url("../fonts/Akrobatlight.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat'), local('Akrobat-Regular'), url("../fonts/Akrobat.woff2") format('woff2'), url("../fonts/Akrobat.woff") format('woff'), url("../fonts/Akrobat.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url("../fonts/Akrobatsemibold.woff2") format('woff2'), url("../fonts/Akrobatsemibold.woff") format('woff'), url("../fonts/Akrobatsemibold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat Bold'), local('Akrobat-Bold'), url("../fonts/Akrobatbold.woff2") format('woff2'), url("../fonts/Akrobatbold.woff") format('woff'), url("../fonts/Akrobatbold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url("../fonts/Akrobatextrabold.woff2") format('woff2'), url("../fonts/Akrobatextrabold.woff") format('woff'), url("../fonts/Akrobatextrabold.ttf") format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Akrobat', Arial, sans-serif;
+  src: local('Akrobat Black'), local('Akrobat-Black'), url("../fonts/Akrobatblack.woff2") format('woff2'), url("../fonts/Akrobatblack.woff") format('woff'), url("../fonts/Akrobatblack.ttf") format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bad Script', Arial, sans-serif;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url("../fonts/Badscriptregular.woff2") format('woff2'), url("../fonts/Badscriptregular.woff") format('woff'), url("../fonts/Badscriptregular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 html,
 body {
-  background-color: #fff;
+  background-color: #0d0d0d;
 }
 html {
   -ms-touch-action: manipulation;
@@ -34,12 +88,12 @@ html {
     font-size: 1px;
   }
 }
-@media only screen and (min-width: 981px) and (max-width: 1335px) {
+@media only screen and (min-width: 1024px) and (max-width: 1335px) {
   html {
     font-size: 0.09765625vw;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 0.130208333333333vw;
   }
@@ -61,16 +115,18 @@ html:after {
   display: none !important;
 }
 body {
-  font: 14px/1.571429em "Roboto", Arial, sans-serif;
-  color: #353a43;
+  font: 14px/1.571429em "Akrobat", Arial, sans-serif;
+  color: #fff;
 }
 button {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Akrobat", Arial, sans-serif;
 }
 svg {
   -webkit-transition-duration: 150ms;
+       -o-transition-duration: 150ms;
           transition-duration: 150ms;
   -webkit-transition-property: fill, stroke, color;
+  -o-transition-property: fill, stroke, color;
   transition-property: fill, stroke, color;
 }
 svg:not(:root) {
@@ -86,14 +142,17 @@ svg:not(.-no-restyle) [stroke] {
   stroke: currentcolor;
 }
 a {
-  color: $blue;
+  color: #c3d82e;
   -webkit-transition-duration: 150ms;
+       -o-transition-duration: 150ms;
           transition-duration: 150ms;
   -webkit-transition-property: color;
+  -o-transition-property: color;
   transition-property: color;
 }
 a svg {
   -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 a:link {
@@ -113,25 +172,31 @@ a[href*="tel:"] {
 }
 .wrapper {
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 .container {
   margin: auto;
-  max-width: 1446px;
+  max-width: 1284px;
   position: relative;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1336px) {
   .container {
-    padding: 0 40px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1335px) {
+  .container {
+    width: 93.75%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 94.010417%;
   }
 }
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 0 20px;
+    width: 100%;
   }
 }
 hr {
@@ -160,6 +225,7 @@ img.-grayscale-hoverable {
 img.-grayscale-hoverable {
   -webkit-transition: -webkit-filter 150ms;
   transition: -webkit-filter 150ms;
+  -o-transition: filter 150ms;
   transition: filter 150ms;
   transition: filter 150ms, -webkit-filter 150ms;
 }
@@ -185,7 +251,7 @@ img.-grayscale-hoverable:hover {
     display: none !important;
   }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1023px) {
   .hidden-below-t {
     display: none !important;
   }
@@ -195,7 +261,7 @@ img.-grayscale-hoverable:hover {
     display: none !important;
   }
 }
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 1024px) {
   .hidden-above-t {
     display: none !important;
   }
@@ -210,7 +276,7 @@ img.-grayscale-hoverable:hover {
     display: none !important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hidden-between-m-t {
     display: none !important;
   }
