@@ -19,55 +19,55 @@
   }
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat Thin'), local('Akrobat-Thin'), url("../fonts/Akrobatthin.woff2") format('woff2'), url("../fonts/Akrobatthin.woff") format('woff'), url("../fonts/Akrobatthin.ttf") format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight'), url("../fonts/Akrobatextralight.woff2") format('woff2'), url("../fonts/Akrobatextralight.woff") format('woff'), url("../fonts/Akrobatextralight.ttf") format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat Light'), local('Akrobat-Light'), url("../fonts/Akrobatlight.woff2") format('woff2'), url("../fonts/Akrobatlight.woff") format('woff'), url("../fonts/Akrobatlight.ttf") format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat'), local('Akrobat-Regular'), url("../fonts/Akrobat.woff2") format('woff2'), url("../fonts/Akrobat.woff") format('woff'), url("../fonts/Akrobat.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url("../fonts/Akrobatsemibold.woff2") format('woff2'), url("../fonts/Akrobatsemibold.woff") format('woff'), url("../fonts/Akrobatsemibold.ttf") format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat Bold'), local('Akrobat-Bold'), url("../fonts/Akrobatbold.woff2") format('woff2'), url("../fonts/Akrobatbold.woff") format('woff'), url("../fonts/Akrobatbold.ttf") format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url("../fonts/Akrobatextrabold.woff2") format('woff2'), url("../fonts/Akrobatextrabold.woff") format('woff'), url("../fonts/Akrobatextrabold.ttf") format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Akrobat', Arial, sans-serif;
+  font-family: 'Akrobat';
   src: local('Akrobat Black'), local('Akrobat-Black'), url("../fonts/Akrobatblack.woff2") format('woff2'), url("../fonts/Akrobatblack.woff") format('woff'), url("../fonts/Akrobatblack.ttf") format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Bad Script', Arial, sans-serif;
+  font-family: 'Bad Script';
   src: local('Bad Script Regular'), local('BadScript-Regular'), url("../fonts/Badscriptregular.woff2") format('woff2'), url("../fonts/Badscriptregular.woff") format('woff'), url("../fonts/Badscriptregular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -115,11 +115,13 @@ html:after {
   display: none !important;
 }
 body {
-  font: 14px/1.571429em "Akrobat", Arial, sans-serif;
+  font: 14px/1.571429em 'Akrobat', Arial, sans-serif;
   color: #fff;
 }
-button {
-  font-family: "Akrobat", Arial, sans-serif;
+button,
+input,
+textarea {
+  font-family: 'Akrobat', Arial, sans-serif;
 }
 svg {
   -webkit-transition-duration: 150ms;

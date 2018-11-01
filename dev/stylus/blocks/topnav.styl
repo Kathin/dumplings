@@ -3,8 +3,6 @@
   background-size cover
   background-position center
   color #ffffff 
-  padding-top 35px
-  height 77px
   width 100%
   position absolute
   top 0
@@ -13,30 +11,57 @@
   box-sizing border-box
   text-align center
   +a($m)
-    padding 35px 40px 0
+    padding 15px 0 0
   +b($m)
-    padding 35px 20px 0
+    padding 18px 0
   &__logo
-    max-width 363px
     display inline-block
-    margin 0 53px
+    +a($m)
+      max-width 363px
+      margin 0 53px
+    +b($m)
+      max-width 204px
     img 
       width 100%
   &__list 
     display inline-block
-    text-align right
+    +a($m)
+      text-align right
+    +b($m)
+      top 0
+      position fixed
+      padding 66px 0 28px
+      left -100%
+      transition $speed all   
+      width 100%
+      text-align center
+      background #000
+      &:after
+        content ''
+        width 100%
+        top 100%
+        height calc(100vh - 346px)
+        position absolute
+        background #000
+        opacity 0.5
+        display block
     &:last-child
       text-align left      
     &-item 
-      font-size 18.75px
-      line-height 17.71px
       text-transform uppercase
-      display block
-      color #ffffff 
-      margin-top 17.71px
-      &:hover
-        text-decoration none
-        color $green
+      display block 
+      +a($m)
+        font-size 18.75px
+        line-height 17.71px
+        margin-top 17.71px
+      +b($m)
+        font-size 17px
+        line-height 42px
+      a      
+        color #ffffff       
+        &:hover
+          text-decoration none
+          color $green
   &__burger
     width 38px
     height 39px
@@ -86,7 +111,7 @@
       line-height 0
       width 38px
       height 39px
-    &:hover 
+    &:hover, &:active 
       text-decoration none
       color $green
       &:after
@@ -97,12 +122,11 @@
       height 28px
       background-size cover
       position absolute
+      background-image url(../img/phone.png)
       +a($m)
-        background-image url(../img/phone.png)
         top 9px
         right 5px
       +b($m)
-        background-image url(../img/phone_green.png)
         top 50%
         transform translateY(-50%) translateX(-50%)
         left 50%

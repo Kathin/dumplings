@@ -13,8 +13,7 @@ doctype html
     meta(name="keywords", content="")
     meta(name="description", content="")
     meta(name="viewport", content="width=device-width")
-    script(src="js/vendor.js")    
-    link(href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&amp;subset=cyrillic,cyrillic-ext", rel="stylesheet")
+    script(src="js/vendor.js")
     if env === 'dev'
       link(rel="stylesheet", href="css/reset.css")
       link(rel="stylesheet", href="css/layout.css")
@@ -31,17 +30,30 @@ doctype html
         .topnav 
           .topnav__burger#pull
             img(src="img/burger.png")
-          a.topnav__phone(hfer="#") Обратный звонок #[br]для оптовиков
+          a.topnav__phone(data-modal="modal/modal.html" href="modal/modal.html") Обратный звонок #[br]для оптовиков
           .topnav__list 
-            a.topnav__list-item(href="#") Продукты
-            a.topnav__list-item(href="#") Преимущества
-            a.topnav__list-item.-active(href="#") Что внутри?
+            .topnav__list-item 
+              a(href="#") Продукты
+            .topnav__list-item 
+              a(href="#") Преимущества
+            .topnav__list-item.-active 
+              a(href="#") Что внутри?
+            .hidden-above-m
+              .topnav__list-item 
+                a(href="#") Секреты приготовления
+              .topnav__list-item
+                a(href="#") ГДЕ КУПИТЬ
+              .topnav__list-item
+                a(href="#") Контакты
           a.topnav__logo(href="/")
             img(src="img/logo.png")            
-          .topnav__list 
-            a.topnav__list-item(href="#") Секреты #[br]приготовления
-            a.topnav__list-item(href="registration.html") ГДЕ КУПИТЬ
-            a.topnav__list-item(href="registration.html") Контакты
+          .topnav__list.hidden-below-m 
+            .topnav__list-item
+              a(href="#") Секреты #[br]приготовления
+            .topnav__list-item
+              a(href="#") ГДЕ КУПИТЬ
+            .topnav__list-item
+              a(href="#") Контакты
       .content
         block main
         //-.footer

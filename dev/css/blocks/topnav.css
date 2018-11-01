@@ -23,8 +23,6 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding-top: 35px;
-  height: 77px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -36,38 +34,87 @@
 }
 @media only screen and (min-width: 768px) {
   .topnav {
-    padding: 35px 40px 0;
+    padding: 15px 0 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .topnav {
-    padding: 35px 20px 0;
+    padding: 18px 0;
   }
 }
 .topnav__logo {
-  max-width: 363px;
   display: inline-block;
-  margin: 0 53px;
+}
+@media only screen and (min-width: 768px) {
+  .topnav__logo {
+    max-width: 363px;
+    margin: 0 53px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .topnav__logo {
+    max-width: 204px;
+  }
 }
 .topnav__logo img {
   width: 100%;
 }
 .topnav__list {
   display: inline-block;
-  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .topnav__list {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .topnav__list {
+    top: 0;
+    position: fixed;
+    padding: 66px 0 28px;
+    left: -100%;
+    -webkit-transition: 150ms all;
+    -o-transition: 150ms all;
+    transition: 150ms all;
+    width: 100%;
+    text-align: center;
+    background: #000;
+  }
+  .topnav__list:after {
+    content: '';
+    width: 100%;
+    top: 100%;
+    height: calc(100vh - 346px);
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    display: block;
+  }
 }
 .topnav__list:last-child {
   text-align: left;
 }
 .topnav__list-item {
-  font-size: 18.75px;
-  line-height: 17.71px;
   text-transform: uppercase;
   display: block;
-  color: #fff;
-  margin-top: 17.71px;
 }
-.topnav__list-item:hover {
+@media only screen and (min-width: 768px) {
+  .topnav__list-item {
+    font-size: 18.75px;
+    line-height: 17.71px;
+    margin-top: 17.71px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .topnav__list-item {
+    font-size: 17px;
+    line-height: 42px;
+  }
+}
+.topnav__list-item a {
+  color: #fff;
+}
+.topnav__list-item a:hover {
   text-decoration: none;
   color: #c3d82e;
 }
@@ -144,11 +191,13 @@
     height: 39px;
   }
 }
-.topnav__phone:hover {
+.topnav__phone:hover,
+.topnav__phone:active {
   text-decoration: none;
   color: #c3d82e;
 }
-.topnav__phone:hover:after {
+.topnav__phone:hover:after,
+.topnav__phone:active:after {
   background-image: url("../img/phone_green.png");
 }
 .topnav__phone:after {
@@ -157,17 +206,16 @@
   height: 28px;
   background-size: cover;
   position: absolute;
+  background-image: url("../img/phone.png");
 }
 @media only screen and (min-width: 768px) {
   .topnav__phone:after {
-    background-image: url("../img/phone.png");
     top: 9px;
     right: 5px;
   }
 }
 @media only screen and (max-width: 767px) {
   .topnav__phone:after {
-    background-image: url("../img/phone_green.png");
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
         -ms-transform: translateY(-50%) translateX(-50%);

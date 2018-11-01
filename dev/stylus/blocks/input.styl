@@ -1,13 +1,18 @@
 .input
-  border-radius 27.5px
   box-sizing border-box
   position relative
   transition border-color $speed
-  background none
+  background #2f2f2f
   box-sizing border-box
-  padding 18px 34px
+  color #b8bcc3
   font-size 0
   line-height 0
+  +a($m)
+    padding 5px 12px
+    margin-top 25px
+  +b($m)
+    padding 3px 4px
+    margin-top 16px
   &.-error
     .input__error
       display block
@@ -16,68 +21,84 @@
   &__placeholder
     position absolute
     top 0
-    left 0 
-    padding 19px 34px
-    font-size 16px
-    line-height 16px
+    left 0    
+    color #b8bcc3
+    +a($m)
+      font-size 19px
+      line-height 30px
+      height 30px
+      padding 5px 12px 
+    +b($m)
+      font-size 17px
+      line-height 23px
+      height 23px
+      padding 3px 4px
     &.hidden
       display none      
   input
     border none
     outline none
     -webkit-appearance none
-    font-size 16px
-    line-height 17px
-    height 17px
     background none
+    color #b8bcc3
     width 100%
+    +a($m)
+      font-size 19px
+      line-height 30px
+      height 30px
+    +b($m)
+      font-size 17px
+      line-height 23px
+      height 23px
     &::-ms-clear
       display none 
     &:-webkit-autofill
-      -webkit-text-fill-color #ffffff
+      -webkit-text-fill-color #b8bcc3
       -webkit-box-shadow 0 0 0px 1000px transparent inset
       transition background-color 5000s ease-in-out 0s 
       background none  
-      background-color transparent
+      background-color transparent 
     &:focus
       ~ .input__placeholder
         display none
-    &.purple
-      color #fff
-      &:-webkit-autofill  
-        -webkit-text-fill-color $purple
   textarea
     border none
     outline none
     -webkit-appearance none
-    font-size 16px
-    line-height 17px    
     background none
     width 100%
+    color #b8bcc3
     overflow hidden
-    font-family "Roboto", Arial, sans-serif
+    +a($m)
+      font-size 19px
+      line-height 20px
+    +b($m)
+      font-size 17px
+      line-height 19px
     &::-ms-clear
       display none 
     &:-webkit-autofill
-      -webkit-text-fill-color #ffffff
+      -webkit-text-fill-color #b8bcc3
       -webkit-box-shadow 0 0 0px 1000px transparent inset
       transition background-color 5000s ease-in-out 0s 
       background none  
+      color #b8bcc3 !important
     &:focus
       ~ .input__placeholder
         display none
-    &.purple
-      color #fff
-      &:-webkit-autofill  
-        -webkit-text-fill-color $purple
   &__error
     position absolute
-    bottom -25px
-    font-size 14px
-    line-height 16px
-    color $purple
+    color $green
     left 0
     display none
+    +a($m)
+      top -20px
+      font-size 14px
+      line-height 16px
+    +b($m)
+      top -15px
+      font-size 12px
+      line-height 14px
 button
   outline none
   -webkit-appearance none
