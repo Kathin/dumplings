@@ -144,12 +144,12 @@ jQuery(document).ready(function($) {
                         .removeClass("hidden")
                     $.arcticmodal('close');
                     $.arcticmodal({
-                       content: '<div class="box-modal modal"><div class="modal__message"><p>Данные успешно отправлены</p><img src="' + window.ENV.path +'img/ok.png" align="center" alt="ok" /></div></div>'
+                       content: '<div class="box-modal modal"><div class="modal__close arcticmodal-close"></div><div class="modal__message"><p>Данные успешно отправлены</p><img src="' + window.ENV.path +'img/ok.png" align="center" alt="ok" /></div></div>'
                     });
                 })
                 .fail(function(data) {
                     $.arcticmodal({
-                       content: '<div class="box-modal modal"></div><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
+                       content: '<div class="box-modal modal"><div class="modal__close arcticmodal-close"></div><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
                     });
                 })
             }
