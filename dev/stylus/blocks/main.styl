@@ -1,0 +1,134 @@
+.main 
+  &__top
+    padding-top 222px
+    text-align center  
+    box-sizing border-box
+    position relative
+    width 100%
+    overflow visible
+    overflow-x hidden 
+    background url('../img/blackline.png')
+    &-blackbox
+      width 100%
+      background $black
+      height 270px
+      margin-top -219px
+    &:before
+      content ''
+      display block
+      position absolute
+      width 751px
+      height 1135px
+      background-image url('../img/mainbg1.png')
+      background-size 751px 1135px
+      top 0
+      +a($t)
+        right calc(50% + 277px)
+      +b($t)
+        right 77%
+      +density(2)
+        background-image url('../img/mainbg1@2x.png')
+    &:after
+      content ''
+      display block
+      position absolute
+      width 748px
+      height 1235px
+      background-image url('../img/mainbg2.png')
+      background-size 748px 1235px
+      top 0
+      +a($t)
+        left calc(50% + 288px)
+      +b($t)
+        left 78.15%
+      +density(2)
+        background-image url('../img/mainbg2@2x.png')
+    &-title 
+      position absolute
+      top 40px
+      color $green 
+      font-family 'Bad Script', Arial, sans-serif      
+      font-size 30px
+      right calc(50% + 200px)
+      transform skew(-20deg, 20deg)
+    &-slider
+      width 100%
+      overflow hidden
+      &:before
+        content ''
+        display block
+        position absolute
+        width 122px
+        height 91px   
+        background-image url('../img/handcraft.png')  
+        background-size 122px 91px
+        +a($t)
+          right calc(50% + 208px)
+          top 69px 
+        +b($t)
+          right 71.64%
+          top 7.18%
+      .swiper-slide
+        max-width 100%    
+        img
+          max-width 100%
+      .swiper-button-prev
+        background-image url('../img/arrow-left.png')
+        width 46px
+        height 132px
+        background-size 46px 132px
+        left auto
+        margin-top -66px
+        +a($t)
+          right calc(50% + 450px)
+        +b($t)
+          right 96.5%
+      .swiper-button-next
+        background-image url('../img/arrow-right.png')
+        width 46px
+        height 132px
+        background-size 46px 132px
+        right auto
+        margin-top -66px
+        +a($t)
+          left calc(50% + 450px)
+        +b($t)
+          left 96.5%
+  &__remember
+    text-align center
+    &-title
+      font-family 'Bad Script', Arial, sans-serif
+      font-size 45px 
+      line-height 36px
+      letter-spacing -1.6px
+      word-spacing 5px
+      transform scaleX(1.2)     
+    &-subtitle  
+      color $green
+      font-size 31.25px 
+      line-height 35px 
+      margin-top 40px
+      text-transform uppercase
+    &-text 
+      font-size 27px
+      line-height 31px
+      p 
+        margin 0 auto
+        margin-top 35px
+        max-width 740px
+    &-dumpling
+      position relative
+      padding-top 150px
+      &-img 
+        max-width 593px
+        margin 0 auto
+        img 
+          width 100%
+      &-slider
+        position absolute
+        width 228px
+        top -20px        
+        margin 0 auto
+        left 0
+        right 0
+      

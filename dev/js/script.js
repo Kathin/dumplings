@@ -240,4 +240,49 @@ jQuery(document).ready(function($) {
             }  
         });
     });
+
+    /*Слайдер на главной*/
+    $(".main__top-slider").each(function() {
+        new Swiper(this, {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            centeredSlides: true,
+            loopedSlides: 1,
+            effect: "fade",
+            autoplay: {
+                delay: 5000,
+            },
+            speed: 1000,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    });
+    /*Дым*/
+    $(".main__remember-dumpling-slider").each(function() {
+        new Swiper(this, {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            centeredSlides: true,
+            loopedSlides: 1,
+            effect: "fade",
+            autoplay: {
+                delay: 1000,
+            },
+            slidesPerView: 1,
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 2000,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    });
 })
