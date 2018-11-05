@@ -253,7 +253,7 @@ jQuery(document).ready(function($) {
             autoplay: {
                 delay: 5000,
             },
-            speed: 1000,
+            speed: 700,
             // Navigation arrows
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -271,13 +271,13 @@ jQuery(document).ready(function($) {
             loopedSlides: 1,
             effect: "fade",
             autoplay: {
-                delay: 1000,
+                delay: 200,
             },
             slidesPerView: 1,
             fadeEffect: {
                 crossFade: true
             },
-            speed: 2000,
+            speed: 400,
             // Navigation arrows
             navigation: {
                 nextEl: ".swiper-button-next",
