@@ -1,0 +1,267 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.insaid {
+  position: relative;
+  overflow: hidden;
+}
+.insaid__top {
+  background: url("../img/insaid/topbg.jpg");
+  background-size: cover;
+  text-align: right;
+  font-size: 0;
+  line-height: 0;
+  max-height: 970px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.insaid__top:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 2dppx), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .insaid__top {
+    background-image: url("../img/insaid/topbg@2x.jpg");
+  }
+}
+@media only screen and (min-width: 768px) {
+  .insaid__top {
+    padding-top: 274px;
+    padding-bottom: 199px;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__top {
+    padding-top: 144px;
+    padding-right: 29%;
+    padding-bottom: 42px;
+    background-position: calc(50% - 64px);
+    min-height: 655px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .insaid__top .container {
+    width: 1024px;
+  }
+}
+.insaid__top-text {
+  position: relative;
+  vertical-align: top;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .insaid__top-text {
+    display: inline-block;
+    max-width: 618px;
+    min-width: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-right: calc(50% - 115px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .insaid__top-text {
+    margin-right: calc(50% - 25px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__top-text {
+    display: block;
+    padding: 0 13px;
+    min-width: 200px;
+  }
+}
+.insaid__top-text-title {
+  font-family: 'Bad Script', Arial, sans-serif;
+  letter-spacing: -1.6px;
+  word-spacing: 5px;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+@media only screen and (min-width: 1024px) {
+  .insaid__top-text-title {
+    font-size: 45px;
+    line-height: 52px;
+    margin-left: 42px;
+    max-width: 416px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .insaid__top-text-title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 19px;
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__top-text-title {
+    font-size: 31px;
+    line-height: 34.7px;
+    max-width: 200px;
+    margin-left: 19px;
+  }
+}
+.insaid__top-text-subtitle {
+  color: #c3d82e;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1024px) {
+  .insaid__top-text-subtitle {
+    font-size: 31.25px;
+    line-height: 35px;
+    margin-top: 53px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .insaid__top-text-subtitle {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__top-text-subtitle {
+    font-size: 21px;
+    line-height: 23px;
+    margin-top: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .insaid__top-text-content {
+    font-size: 27px;
+    line-height: 31px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .insaid__top-text-content {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__top-text-content {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 21px;
+    max-width: 360px;
+  }
+}
+.insaid__top-text-content b {
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.insaid__free {
+  background: url("../img/insaid/freebg.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 970px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-attachment: fixed;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 2dppx), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .insaid__free {
+    background-image: url("../img/insaid/freebg@2x.jpg");
+  }
+}
+@media only screen and (min-width: 768px) {
+  .insaid__free {
+    height: 970px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__free {
+    height: 654px;
+  }
+}
+.insaid__free-text {
+  padding-top: 68px;
+  color: #0d0d0d;
+}
+.insaid__free-text-title {
+  font-family: 'Bad Script', Arial, sans-serif;
+  letter-spacing: -1.6px;
+  word-spacing: 5px;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+}
+@media only screen and (min-width: 768px) {
+  .insaid__free-text-title {
+    font-size: 45px;
+    line-height: 52px;
+    margin-bottom: 31px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__free-text-title {
+    font-size: 31px;
+    line-height: 34.7px;
+    margin-bottom: 21px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .insaid__free-text-content {
+    font-size: 27px;
+    line-height: 31px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__free-text-content {
+    font-size: 18px;
+    line-height: 18px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+.insaid__free-flowers {
+  position: absolute;
+  top: 392px;
+  left: calc(50% + 253px);
+}
+@media only screen and (max-width: 767px) {
+  .insaid__free-flowers {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .insaid__free-map {
+    margin: 224px auto 0;
+    width: 354px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .insaid__free-map {
+    margin: 48px auto 0;
+    width: 208px;
+  }
+}
+.insaid__free-map img {
+  width: 100%;
+}
