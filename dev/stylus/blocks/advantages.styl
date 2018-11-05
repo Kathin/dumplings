@@ -1,0 +1,212 @@
+.advantages
+  position relative
+  overflow hidden
+  &__top
+    background url('../img/blackline.png') 
+    background-position center 
+    text-align center
+    font-size 0
+    line-height 0
+    +a($m)
+      padding-top 284px
+    +b($m)
+      padding-top 144px
+    &-text
+      vertical-align top
+      +a($m)
+        display inline-block
+        max-width 501px
+        width 50%
+        padding-bottom 194px
+        box-sizing border-box
+        padding-top 104px
+        text-align left
+      +a(1082px)
+        margin-right 34px
+      +b($m)
+        display block
+        text-align center
+        padding 0 13px
+      &-title
+        font-family 'Bad Script', Arial, sans-serif
+        letter-spacing -1.6px
+        word-spacing 5px
+        transform scaleX(1.2)  
+        +a($m)
+          font-size 45px 
+          line-height 52px
+          margin-left 42px
+          max-width 416px
+        +b($m)   
+          font-size 31px 
+          line-height 34.7px
+      &-subtitle  
+        color $green
+        text-transform uppercase
+        +a($m)
+          font-size 31.25px 
+          line-height 35px 
+          margin-top 53px
+          margin-bottom 40px
+        +b($m)
+          font-size 19.44px 
+          line-height 23px 
+          margin-top 28px
+      &-content
+        +a($m)
+          font-size 27px
+          line-height 31px
+        +b($m)
+          font-size 18px
+          line-height 18px
+          max-width 360px
+          margin 0 auto
+    &-dumpling 
+      position relative
+      +a($m)
+        display inline-block
+        max-width 479px
+        width 50%
+        box-sizing border-box
+        padding-left 42px
+      +b($m)
+        display block
+        width 280px
+        margin 0 auto
+        height 277px
+      &-img
+        width 100%          
+        img
+          min-width 100%
+          +b($m)
+            width 100%
+            margin-left 21px
+      .main__remember-dumpling-slider
+        +a($m)
+          top -115px
+        +b($m)
+          top -49px
+  &__item
+    background-position center
+    background-attachment fixed
+    position relative
+    box-sizing border-box
+    background-size cover
+    background-repeat no-repeat
+    font-size 0
+    line-height 0
+    +a($m)
+      height 763px
+      padding-top 77px
+    +b($m)
+      height 654px  
+      padding-top 48px    
+      text-align center
+    &-number
+      display inline-block
+      background-repeat no-repeat
+      font-size 0
+      +a($m)
+        height 98px
+        width 98px
+        background-size 98px
+      +b($m)
+        height 65px
+        width 65px
+        background-size 65px        
+    &-title  
+      color $green
+      text-transform uppercase
+      +a($m)
+        font-size 31.25px 
+        line-height 31.25px 
+        margin 31.25px 0
+      +b($m)
+        font-size 21px 
+        line-height 21px 
+        margin 21px 0
+    &-text 
+      +a($m)
+        font-size 27px
+        line-height 31px
+        max-width 488px
+      +b($m)
+        font-size 18px
+        line-height 21px
+        max-width 280px
+        margin 0 auto
+    &.-left
+      +a($m) 
+        padding-left 50%
+        text-align left
+    &.-right 
+      +a($m)
+        padding-right 50%
+        text-align right
+        .advantages__item-text
+          float right
+    &.-center      
+      +a($m)
+        text-align center
+        .advantages__item-text  
+          max-width 712px
+          margin 0 auto
+    &.-first
+      background-image url('../img/advantages/firstbg.jpg')
+      +b($m)
+        background-position 41% center
+      +density(2)
+        background-image url('../img/advantages/firstbg@2x.jpg')
+      .advantages__item-number
+        background-image url('../img/advantages/one.png')
+    &.-second
+      background-image url('../img/advantages/secondbg.png')
+      background-attachment unset
+      +a($m)
+        background-position calc(50% + 172px) 309px
+        background-size 1532px
+      +b($m)
+        background-size 1019px
+        background-position calc(50% - 57px) 399px
+        padding-top 72px   
+      +density(2)
+        background-image url('../img/advantages/secondbg@2x.png')
+      .advantages__item-number
+        background-image url('../img/advantages/two.png')
+    &.-third
+      background-image url('../img/advantages/thirdbg.jpg')
+      background-attachment unset
+      +a($m)
+        padding-top 156px 
+      +b($m)
+        padding-top 113px 
+      +density(2)
+        background-image url('../img/advantages/thirdbg@2x.jpg')
+      .advantages__item-number
+        background-image url('../img/advantages/three.png')
+    &.-fourth
+      background-image url('../img/advantages/fourthbg.jpg')
+      +a($m)
+        padding-top 198px 
+      +b($m)
+        padding-top 288px 
+        background-position 47% center
+      +density(2)
+        background-image url('../img/advantages/fourthbg@2x.jpg')
+      .advantages__item-number
+        background-image url('../img/advantages/four.png')
+      .advantages__item-text
+        color #303030
+      .advantages__item-title
+        font-weight 700
+    &.-fiveth
+      background-image url('../img/advantages/fivethbg.jpg')
+      +a($m)
+        padding-top 70px 
+      +b($m)
+        padding-top 50px
+      +density(2)
+        background-image url('../img/advantages/fivethbg@2x.jpg')
+      .advantages__item-number
+        background-image url('../img/advantages/five.png')
+      

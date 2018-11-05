@@ -128,6 +128,7 @@
   overflow: visible;
   overflow-x: hidden;
   background: url("../img/blackline.png");
+  background-position: center;
 }
 @media only screen and (min-width: 768px) {
   .main__top {
@@ -425,6 +426,7 @@
 @media only screen and (min-width: 768px) {
   .main__real {
     background: url("../img/blackline.png");
+    background-position: center;
   }
 }
 .main__real:after {
@@ -582,6 +584,7 @@
     position: relative;
     padding: 59px 83px 40px 47px;
     background: url("../img/blackline.png");
+    background-position: center;
   }
 }
 .main__real-text-title {
