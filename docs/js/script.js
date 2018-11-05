@@ -144,12 +144,12 @@ jQuery(document).ready(function($) {
                         .removeClass("hidden")
                     $.arcticmodal('close');
                     $.arcticmodal({
-                       content: '<div class="box-modal modal"><div class="modal__close arcticmodal-close"></div><div class="modal__message"><p>Данные успешно отправлены</p><img src="' + window.ENV.path +'img/ok.png" align="center" alt="ok" /></div></div>'
+                       content: '<div class="box-modal modal"><div class="modal__message"><p>Данные успешно отправлены</p><img src="' + window.ENV.path +'img/ok.png" align="center" alt="ok" /></div></div>'
                     });
                 })
                 .fail(function(data) {
                     $.arcticmodal({
-                       content: '<div class="box-modal modal"><div class="modal__close arcticmodal-close"></div><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
+                       content: '<div class="box-modal modal"></div><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
                     });
                 })
             }
@@ -238,6 +238,51 @@ jQuery(document).ready(function($) {
                     menu.addClass("active");
                 }, 200 ); 
             }  
+        });
+    });
+
+    /*Слайдер на главной*/
+    $(".main__top-slider").each(function() {
+        new Swiper(this, {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            centeredSlides: true,
+            loopedSlides: 1,
+            effect: "fade",
+            autoplay: {
+                delay: 5000,
+            },
+            speed: 700,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    });
+    /*Дым*/
+    $(".main__remember-dumpling-slider").each(function() {
+        new Swiper(this, {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            centeredSlides: true,
+            loopedSlides: 1,
+            effect: "fade",
+            autoplay: {
+                delay: 200,
+            },
+            slidesPerView: 1,
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 400,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
         });
     });
 })

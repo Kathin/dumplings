@@ -10,6 +10,7 @@
   "author": "karamilko",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.1.2",
     "babel": "^6.23.0",
     "babel-plugin-transform-es2015-for-of": "^6.23.0",
     "babel-preset-env": "^1.7.0",
