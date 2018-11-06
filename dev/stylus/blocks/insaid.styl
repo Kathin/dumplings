@@ -9,6 +9,7 @@
     line-height 0    
     max-height 970px
     box-sizing border-box    
+    position relative
     &:after
       content ''
       display table 
@@ -26,8 +27,20 @@
       background-position calc(50% - 64px)
       min-height 655px
     .container
+      position static
       +a($t)
         width 1024px
+    &-sticker
+      position absolute
+      z-index 3
+      +a($m)
+        display none
+      +b($m)
+        width 100px
+        top 140px
+        right 50px
+      img 
+        width 100%
     &-text
       position relative  
       vertical-align top
@@ -104,6 +117,8 @@
     height 970px
     box-sizing border-box 
     background-attachment fixed
+    position relative
+    background-position center
     +density(2)
       background-image url('../img/insaid/freebg@2x.jpg')   
     +a($m)
@@ -152,4 +167,179 @@
         width 208px
       img 
         width 100%
+  &__item
+    position relative
+    box-sizing border-box
+    +a($m)  
+      height 970px
+    &:nth-child(2n+1)
+      background url('../img/blackline.png')    
+      background-position center   
+    .container 
+      box-sizing border-box
+    & + & &
+      &-text
+        +a($m)
+          max-width 510px 
+        +b($m) 
+          padding-top 259px 
+    &-text
+      text-align center
+      +a($m)
+        max-width 540px 
+        padding-top 101px 
+      +b($m)    
+        max-width 400px
+        margin 0 auto
+        padding-bottom 245px
+        padding-top 34px
+      &-logo
+        +a($m)
+          margin-bottom 35px
+        +b($m) 
+          margin-bottom 20px
+        img
+          +b($m)
+            width 128px
+      &-title
+        font-family 'Bad Script', Arial, sans-serif
+        letter-spacing -1.6px
+        word-spacing 5px
+        transform scaleX(1.2)  
+        +a($t)
+          font-size 45px 
+          line-height 52px
+        +btw($m, $t) 
+          font-size 40px 
+          line-height 48px
+        +b($m)   
+          font-size 31px 
+          line-height 34.7px
+      &-subtitle  
+        color $green
+        text-transform uppercase
+        +a($t)
+          font-size 31.25px 
+          line-height 35px 
+          padding-top 53px
+          padding-bottom 40px
+        +btw($m, $t) 
+          font-size 25px 
+          line-height 30px 
+          padding-top 45px
+          padding-bottom 35px
+        +b($m)
+          font-size 21px 
+          line-height 23px 
+          padding-top 28px
+      &-content
+        +a($m)
+          font-size 27px
+          line-height 31px
+        +btw($m, $t) 
+          font-size 22px 
+          line-height 28px 
+        +b($m)
+          font-size 18px
+          line-height 21px
+          margin 0 auto
+          margin-top 21px
+          max-width 360px
+        p
+          +a($m) 
+            margin-top 31px
+          +btw($m, $t) 
+            margin-top 28px 
+          +b($m)
+            margin-top 21px
+    &-sticker
+      position absolute
+      z-index 3
+      +a($m)
+        width 152px
+        top 183px
+        left calc(50% + 155px)
+      img 
+        width 100%
+      +b($m)
+        display none
+    &-img
+      position absolute
+      +a($m)
+        width 682px
+        top 169px
+        z-index 1
+      +b($m)
+        width 423px
+        bottom -226px
+        z-index 1
+        left 50%
+        transform translateX(-50%)
+      img 
+        width 100%
+    &.-left
+      +a($m)
+        .insaid__item-text
+          display inline-block
+          padding-right 50% 
+        .insaid__item-img          
+          left calc(50% + 97px)
+        .container
+          text-align right
+    &.-right
+      +a($m)
+        .insaid__item-text
+          display inline-block
+          padding-left 50%
+        .insaid__item-img          
+          right calc(50% + 97px)
+        .container
+          text-align left
+    &.-last
+      .insaid__item-text-content
+        color #0d0d0d
+      +a($m)
+        background url('../img/insaid/lastbg.png') 
+        background-position center
+        background-size 2048px
+        text-align center
+        height 970px
+        box-sizing border-box 
+        background-attachment fixed
+        position relative
+        +density(2)
+          background-image url('../img/insaid/lastbg@2x.png')   
+        .insaid__item-text-title,
+        .insaid__item-text-subtitle
+          color #0d0d0d
+        .insaid__item-text 
+          margin 0 auto
+          padding-top 288px
+          max-width 620px 
+      +b($m)
+        .insaid__item-text
+          width 100%
+          max-width none
+          padding-bottom 0
+        .insaid__item-text-subtitle
+          max-width 400px
+          margin 0 auto
+        .insaid__item-text-content
+          height 658px
+          width 100%
+          background url('../img/insaid/mobilelast.jpg') 
+          background-position center
+          background-size cover
+          text-align center
+          max-width none
+          background-attachment fixed
+          color #000000
+          margin-top 55px
+          p 
+            padding 170px 70px 0
+         
+      
+      
+       
+      
       
