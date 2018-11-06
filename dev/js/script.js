@@ -14,6 +14,11 @@ jQuery(document).ready(function($) {
         window.ENV = defaults
       }
     })()
+    /*инициализация плавного появления*/
+    AOS.init({
+        duration: 1200,
+        once: true
+    });
     /*Плавная прокрутка*/
     $('a[href^="#"]').on('click', function(e) {
         //e.preventDefault();
@@ -148,8 +153,9 @@ jQuery(document).ready(function($) {
                     });
                 })
                 .fail(function(data) {
+                    $.arcticmodal('close');
                     $.arcticmodal({
-                       content: '<div class="box-modal modal"></div><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
+                       content: '<div class="box-modal modal"><div class="modal__message"><p>Ошибка отправки данных</p><img src="' + window.ENV.path +'img/error.png" align="center" alt="ok" /></div></div>'
                     });
                 })
             }
