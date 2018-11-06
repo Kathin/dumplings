@@ -1,0 +1,67 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.menu-products {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../img/blackline.png");
+  background-position: center;
+  height: 240px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 205px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu-products .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.menu-products-item {
+  color: #fff;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  .menu-products-item {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-products-item {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-products-item {
+    display: none;
+  }
+}
+.menu-products-item:hover,
+.menu-products-item.-active {
+  color: #c3d82e;
+  text-decoration: none;
+}

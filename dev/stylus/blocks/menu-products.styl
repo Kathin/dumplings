@@ -1,0 +1,28 @@
+.menu-products
+  color #fff
+  box-sizing border-box
+  background url('../img/blackline.png')
+  background-position center 
+  height 240px
+  text-align center 
+  box-sizing border-box  
+  padding-top 205px
+  .container
+    +btw($m, $t)
+      display flex
+      justify-content space-around  
+  &-item
+    color #ffffff 
+    display inline-block
+    vertical-align bottom
+    color #ffffff 
+    +a($m)
+      font-size 21px
+      line-height 30px
+    +a($t)
+      padding 0 30px
+    +b($m)
+      display none        
+    &:hover, &.-active
+      color $green  
+      text-decoration none 
