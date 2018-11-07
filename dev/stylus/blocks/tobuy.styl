@@ -1,0 +1,50 @@
+.tobuy
+  background #fff 
+  box-sizing border-box
+  +a($m)
+    min-height 730px
+    padding-bottom 125px
+  +b($m)
+    padding-bottom 80px
+  &:before
+    content ''
+    width 100%
+    background url('../img/blackline.png')
+    background-position center
+    display block
+    +a($m)
+      height 243px
+    +b($m)
+      height 157px
+  &__title
+    letter-space -0.6px
+    text-transform uppercase
+    color #0d0d0d
+    text-align center
+    +a($m)
+      font-size 25px
+      line-height 25px
+      padding 46px 0 112px
+    +b($m)
+      font-size 17px
+      line-height 14px
+      padding 17px 0 30px
+  .container
+    display flex
+    flex 1 1 200px
+    +a($m)
+      flex-flow wrap
+      justify-content space-evenly
+    +b($m)
+      flex-flow nowrap
+      flex-direction column
+      justify-content space-evenly
+      align-items center
+      min-height 368px
+  &__item
+    margin-bottom 50px
+    max-width 250px
+    padding 0 20px
+    img
+      width 100%
+      
