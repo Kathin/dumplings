@@ -1,0 +1,45 @@
+.products
+  position relative
+  overflow hidden
+  +a($m)
+    padding 40px 0
+  +b($m)
+    padding 5px 10px
+  .container  
+    +a($t)  
+      text-align center
+    +b($t)
+      display flex
+      flex-flow wrap
+      justify-content space-evenly
+  &__item
+    display inline-block
+    color #fff 
+    +a($m)
+      padding 40px 40px
+      width 195px
+    +b($m)
+      padding 25px 25px
+      width 120px
+    &:hover
+      text-decoration none 
+      color $green
+    &-img
+      +a($m)
+        height 190px
+      +b($m)
+        max-width 120px
+        height 130px
+      img 
+        max-width 100%
+    &-title
+      text-align center
+      text-transform uppercase     
+      +a($m)
+        font-size 21px
+        line-height 26px
+      +b($m)
+        font-size 14px
+        line-height 17px   
+    
+      
