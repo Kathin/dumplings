@@ -1,0 +1,58 @@
+.map
+  background #fff 
+  box-sizing border-box
+  position relative
+  &:before
+    content ''
+    width 100%
+    background url('../img/blackline.png')
+    background-position center
+    display block
+    +a($m)
+      height 243px
+    +b($m)
+      height 157px
+  .container
+    +a($m)
+      position static
+    +b($m)
+      position relative
+  &__container
+    width 100%
+    +a($m)
+      height 733px
+    +b($m)
+      height 345px
+  &__info 
+    +a($m)
+      position absolute
+      font-size 19px
+      line-height 21.8px
+      top 296px
+      color #000000
+      right calc(50% + 214px)
+      background #fff
+      padding 5px 25px 25px
+      box-shadow -2px 4px 4px 0 rgba(32, 32, 32, 0.33)
+      min-width 233px
+      box-sizing border-box
+    +btw($m, $t)
+      left 40px
+      right auto
+    +b($m)
+      position relative
+      font-size 17px
+      line-height 19px
+      color #fff
+      width 100%
+      background url('../img/blackline.png')
+      background-position center
+      text-align center
+    &-title
+      font-weight 700
+      text-transform uppercase
+      padding-top 18px
+      
+      
+    
+      

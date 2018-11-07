@@ -1,0 +1,106 @@
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.map {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.map:before {
+  content: '';
+  width: 100%;
+  background: url("../img/blackline.png");
+  background-position: center;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .map:before {
+    height: 243px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map:before {
+    height: 157px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .map .container {
+    position: static;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map .container {
+    position: relative;
+  }
+}
+.map__container {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .map__container {
+    height: 733px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map__container {
+    height: 345px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .map__info {
+    position: absolute;
+    font-size: 19px;
+    line-height: 21.8px;
+    top: 296px;
+    color: #000;
+    right: calc(50% + 214px);
+    background: #fff;
+    padding: 5px 25px 25px;
+    -webkit-box-shadow: -2px 4px 4px 0 rgba(32,32,32,0.33);
+            box-shadow: -2px 4px 4px 0 rgba(32,32,32,0.33);
+    min-width: 233px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .map__info {
+    left: 40px;
+    right: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map__info {
+    position: relative;
+    font-size: 17px;
+    line-height: 19px;
+    color: #fff;
+    width: 100%;
+    background: url("../img/blackline.png");
+    background-position: center;
+    text-align: center;
+  }
+}
+.map__info-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
