@@ -1,0 +1,262 @@
+.products-card
+  position relative
+  overflow hidden
+  line-height 0
+  font-size 0
+  +a($m)
+    text-align center
+    padding-bottom 200px
+  +b($m)
+    padding-bottom 90px
+  &:before
+    content ''
+    width 100%
+    display block
+    background-position center
+    background-attachment fixed
+    position relative
+    box-sizing border-box
+    background-size cover
+    background-repeat no-repeat
+    +a($m)
+      height 487px
+    +b($m)
+      height 260px
+  .container
+    +a($t)
+      width 1024px
+    +b($m)
+      padding 0 20px
+      width calc(100% - 40px)
+  &__sticker
+    background-image url('../img/products-card/sticker.png')
+    position absolute
+    text-align center
+    box-sizing border-box
+    transition all $speed
+    background-size cover
+    +a($m)
+      width 177px
+      height 115px
+      padding 29px 10px 10px
+      top -50px
+    +a($t)
+      left calc(50% + 262px)
+    +b($t)
+      right 20px
+    +b($m)
+      width 118px
+      height 77px
+      top -24px
+      padding 20px 10px 10px
+    &:hover
+     transform rotate(13deg) 
+    span
+      font-family 'Bad Script', Arial, sans-serif
+      letter-spacing -0.6px
+      word-spacing 5px
+      transform scaleX(1.2) rotate(-16deg)
+      color #231f20
+      text-align center
+      max-width 122px
+      display inline-block
+      +a($m)
+        font-size 24.6px 
+        line-height 27px
+      +b($m)
+        font-size 16.4px 
+        line-height 18px
+  &__text
+    display inline-block
+    vertical-align top
+    text-align left
+    +a($m)
+      padding-top 100px
+      max-width 500px
+    +btw($m, $t)
+      width 50%
+    +b($m)
+      padding-top 45px
+    &-title
+      text-transform uppercase
+      color $green
+      +a($m)
+        font-size 42px
+        line-height 42px
+      +b($m)
+        font-size 28px
+        line-height 28px
+    &-subtitle
+      color $green
+      font-weight 700
+      +a($m)
+        font-size 21px
+        line-height 25px
+        padding-top 26px
+      +b($m)
+        font-size 16px
+        line-height 18px
+        padding-top 18px
+    p
+      color #acacac
+      +a($m)
+        font-size 21px
+        line-height 25px
+        padding-top 26px
+      +b($m)
+        font-size 16px
+        line-height 18px
+        padding-top 18px
+      b 
+        color #fff
+        text-transform uppercase              
+  &__labels
+    display inline-block
+    box-sizing border-box
+    vertical-align top
+    line-height 0
+    font-size 0
+    text-align center 
+    +a($t)
+      width 510px
+      padding-top 243px
+    +btw($m, $t)
+      width 50%
+      padding-top 243px
+      display inline-flex
+      justify-content space-evenly
+    +b($m)
+      padding-top 45px
+    &-item 
+      display inline-block 
+      text-align center 
+      vertical-align top
+      +a($t)
+        padding 0 25px
+        max-width 108px
+      +btw($m, $t)
+        max-width 108px
+      +b($m)
+        max-width 85px 
+        margin-right 20px    
+      &-img
+        +a($m)
+          height 96px
+        +b($m)
+          height 65px
+          img 
+            width 62px
+      &-title
+        +a($m)
+          font-size 15px 
+          line-height 18px
+        +b($m)
+          font-size 12px 
+          line-height 15px
+  &__img
+    +a($m)
+      position absolute
+      top 7px
+      right calc(50% - 50px)
+    +btw(920px, 1215px)
+      right calc(50% - 30px)
+      > img
+        width 634px
+    +btw($m, 920px) 
+      top 120px     
+      right calc(50% - 20px)
+      > img
+        width 560px
+    +b($m)
+      position relative
+      margin-left -31px
+      margin-top 10px
+      width 100%
+      min-width 400px
+      max-width 600px
+      > img
+        width 100%
+        min-width 400px
+        max-width 600px
+    &-sticker
+      position absolute
+      +a(1215px)
+        top 73px
+        right 155px
+      +btw(920px, 1215px)
+        top 50px
+        right 100px
+      +a(920px)
+        img
+          width 137px
+      +btw($m, 920px) 
+        top 45px
+        right 82px
+        img
+          width 110px
+      +b($m)
+        top 27px
+        right 13%       
+        img
+          width 92px
+  &.-manti, &.-cow, &.-cowpig
+    +a($m)
+      text-align right
+      .products-card__text
+      .products-card__labels
+        display block
+        margin-left 50%
+        width auto
+      .products-card__text
+        padding-bottom 25px
+        border-bottom 1px solid #7e7e7e
+      .products-card__labels
+        padding-top 50px
+        text-align left
+      .products-card__labels-item
+        &:first-child
+          padding-left 0
+    .products-card__labels-item
+      +btw($m, $t)
+        padding 0 10px
+  &.-hinkali
+    &:before
+      background-image url('../img/products-card/hinkalibg.jpg')
+      +density(2)
+        background-image url('../img/products-card/hinkalibg@2x.jpg')  
+  &.-cutlets
+    &:before
+      background-image url('../img/products-card/cutletsbg.jpg')
+      +density(2)
+        background-image url('../img/products-card/cutletsbg@2x.jpg')  
+  &.-manti
+    &:before
+      background-image url('../img/products-card/mantibg.jpg')
+      +density(2)
+        background-image url('../img/products-card/mantibg@2x.jpg')  
+  &.-cow
+    &:before
+      background-image url('../img/products-card/cowbg.jpg')
+      +density(2)
+        background-image url('../img/products-card/cowbg@2x.jpg')  
+  &.-cowpig
+    &:before
+      background-image url('../img/products-card/cowpigbg.jpg')
+      +density(2)
+        background-image url('../img/products-card/cowpigbg@2x.jpg')  
+  &.-meatballs
+    &:before
+      background-image url('../img/products-card/meatballbg.jpg')
+      +density(2)
+        background-image url('../img/products-card/meatballbg@2x.jpg') 
+  &.-curd
+    &:before
+      background-image url('../img/products-card/curdbg.jpg')
+      +density(2)
+        background-image url('../img/products-card/curdbg@2x.jpg') 
+  &.-cherry
+    &:before
+      background-image url('../img/products-card/cherrybg.jpg')
+      +density(2)
+        background-image url('../img/products-card/cherrybg@2x.jpg')
+            

@@ -1,0 +1,39 @@
+extends /layout
+
+block main
+  include /menu-products
+  .products-card.-cow
+    .container
+      a.products-card__sticker(href="secrets.html#dump-cow") 
+        span Секреты приготовления
+      .products-card__text
+        .products-card__text-title ПЕЛЬМЕНИ #[br]МОЛОДАЯ ГОВЯДИНА
+        .products-card__text-subtitle Пельмени по классическому рецепту с сочной начинкой из молодой мраморной говядины.
+        p
+          b СОСТАВ: #[br]
+          | говядина, мука пшеничная, в/с, лук репчатый, яйцо куриное,  соль пищевая, перец черный молотый.
+        p
+          b Пищевая ценность на 100 г продукта:#[br]
+          | белки - 14,4 г,  жиры - 9,6 г, углеводы - 25,3 г, энергетическая ценность - 245,2 кКал.
+        p
+          b Срок годности #[br]
+          | полуфабрикатов в тесте в упакованном виде при температуре -10° - не более  1 месяца, при температуре  -18° - не более 3 месяцев.
+      .products-card__img
+        .products-card__img-sticker
+          img(src="img/sticker.png")
+        img(src="img/products-card/cow.png")
+      .products-card__labels
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/frozen.png")
+          .products-card__labels-item-title ЗАМОРОЖЕННЫЙ ПРОДУКТ
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/gmo.png")
+          .products-card__labels-item-title НЕ СОДЕРЖИТ #[br]GMO
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/hormones.png")
+          .products-card__labels-item-title БЕЗ ПРИМЕНЕНИЯ ГОРМОНОВ
+
+

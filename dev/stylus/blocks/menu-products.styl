@@ -3,10 +3,13 @@
   box-sizing border-box
   background url('../img/blackline.png')
   background-position center 
-  height 240px
   text-align center 
-  box-sizing border-box  
-  padding-top 205px
+  box-sizing border-box 
+  +a($m)
+    height 240px 
+    padding-top 205px
+  +b($m)
+    height 140px 
   .container
     +btw($m, $t)
       display flex

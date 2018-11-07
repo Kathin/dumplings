@@ -1,0 +1,35 @@
+extends /layout
+
+block main
+  include /menu-products
+  .products-card.-cherry
+    .container
+      a.products-card__sticker(href="secrets.html#vareniki-cherry") 
+        span Секреты приготовления
+      .products-card__text
+        .products-card__text-title ВАРЕНИКИ С ВИШНЕЙ
+        .products-card__text-subtitle Спелая и сладкая краснодарская вишня и плотное домашнее тесто — ничего лишнего. 
+        p
+          b СОСТАВ: #[br]
+          | вишня свежемороженная без косточки, сахар-песок,  мука пшеничная в/с, яйцо куриное, соль.
+        p
+          b Пищевая ценность на 100 г продукта:#[br]
+          | белки не менее - 4,6 г,  жиры не более - 2,8 г,  углеводы не более - 30,3 г,  энергетическая ценность - 138,9 кКал.
+        p
+          b Срок годности #[br]
+          | полуфабрикатов в тесте в упакованном виде при температуре -10° - не более 1 месяца, при температуре  -18° - не более 3 месяцев.
+      .products-card__labels
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/frozen.png")
+          .products-card__labels-item-title ЗАМОРОЖЕННЫЙ ПРОДУКТ
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/gmo.png")
+          .products-card__labels-item-title НЕ СОДЕРЖИТ #[br]GMO
+        .products-card__labels-item
+          .products-card__labels-item-img
+            img(src="img/products-card/hormones.png")
+          .products-card__labels-item-title БЕЗ ПРИМЕНЕНИЯ ГОРМОНОВ
+
+

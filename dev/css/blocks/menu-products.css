@@ -24,10 +24,19 @@
           box-sizing: border-box;
   background: url("../img/blackline.png");
   background-position: center;
-  height: 240px;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 205px;
+}
+@media only screen and (min-width: 768px) {
+  .menu-products {
+    height: 240px;
+    padding-top: 205px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-products {
+    height: 140px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .menu-products .container {
