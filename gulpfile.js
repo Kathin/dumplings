@@ -7,7 +7,8 @@ var argv = require("yargs").argv;
 var browserSync = require("browser-sync").create();
 var Karma = require("karma").Server;
 var runSequence = require("run-sequence");
-var $ = require("gulp-load-plugins")();
+var $ = require("gulp-load-plugins")();var gulp = require('gulp');
+var tiny = require('gulp-tinypng-nokey');
 
 var dirTree = require("directory-tree");
 
@@ -36,6 +37,13 @@ var walk = (dir, transform, done) => {
     });
   });
 };
+
+
+gulp.task('tinypng', () => {
+    gulp.src('./docs/img/tinyup/*')
+        .pipe(tiny())
+        .pipe(gulp.dest('./docs/img/tinyto'));
+});
 
 gulp.task("js", () => {
   return (
