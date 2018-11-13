@@ -116,7 +116,6 @@
     text-align center
     height 970px
     box-sizing border-box 
-    background-attachment fixed
     position relative
     background-position center
     +density(2)
@@ -124,7 +123,11 @@
     +a($m)
       height 970px
     +b($m)
-      height 654px
+      height 654px    
+    +a($t)
+      background-attachment fixed
+    +b($t)
+      background-attachment scroll
     &-text
       padding-top 68px 
       color #0d0d0d
@@ -305,10 +308,13 @@
         text-align center
         height 970px
         box-sizing border-box 
-        background-attachment fixed
         position relative
         +density(2)
-          background-image url('../img/insaid/lastbg@2x.png')   
+          background-image url('../img/insaid/lastbg@2x.png')          
+        +a($t)
+          background-attachment fixed
+        +b($t)
+          background-attachment scroll
         .insaid__item-text-title,
         .insaid__item-text-subtitle
           color #0d0d0d
@@ -332,9 +338,12 @@
           background-size cover
           text-align center
           max-width none
-          background-attachment fixed
           color #000000
-          margin-top 55px
+          margin-top 55px          
+          +a($t)
+            background-attachment fixed
+          +b($t)
+            background-attachment scroll
           p 
             padding 170px 70px 0
          

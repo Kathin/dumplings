@@ -204,7 +204,6 @@
   height: 970px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-attachment: fixed;
   position: relative;
   background-position: center;
 }
@@ -221,6 +220,16 @@
 @media only screen and (max-width: 767px) {
   .insaid__free {
     height: 654px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .insaid__free {
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .insaid__free {
+    background-attachment: scroll;
   }
 }
 .insaid__free-text {
@@ -518,7 +527,6 @@
     height: 970px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-attachment: fixed;
     position: relative;
   }
   .insaid__item.-last .insaid__item-text-title,
@@ -549,7 +557,6 @@
     background-size: cover;
     text-align: center;
     max-width: none;
-    background-attachment: fixed;
     color: #000;
     margin-top: 55px;
   }
@@ -560,5 +567,25 @@
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), only screen and (min-width: 768px) and (min-resolution: 2dppx), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .insaid__item.-last {
     background-image: url("../img/insaid/lastbg@2x.png");
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .insaid__item.-last {
+    background-attachment: fixed;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .insaid__item.-last {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 1024px) {
+  .insaid__item.-last .insaid__item-text-content {
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 1023px) {
+  .insaid__item.-last .insaid__item-text-content {
+    background-attachment: scroll;
   }
 }

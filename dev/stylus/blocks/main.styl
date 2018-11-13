@@ -218,17 +218,25 @@
         img 
           width 100%
       &-slider
-        position absolute
-        top -20px        
+        position absolute     
         margin 0 auto
         left 0
         right 0
         +a($m)
           width 228px
+          bottom 150px  
         +b($m)
           width 126px
+          bottom 40px 
         img 
           width 100%
+        &-dim1, &-dim2, &-dim3
+          position absolute
+          opacity 1
+          bottom 0
+          left 0 
+        &-dim1
+          opacity 1
   &__real
     position relative
     z-index 2
@@ -410,7 +418,6 @@
     background-image url('../img/bgseparator.png')
     background-size 2048px
     background-position center
-    background-attachment fixed
     position relative
     z-index 1
     +density(2)
@@ -419,5 +426,9 @@
       height 976px
     +b($m)
       height 660px
+    +a($t)
+      background-attachment fixed
+    +b($t)
+      background-attachment scroll
       
       

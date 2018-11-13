@@ -268,7 +268,7 @@ jQuery(document).ready(function($) {
         });
     });
     /*Дым*/
-    $(".main__remember-dumpling-slider").each(function() {
+    /*$(".main__remember-dumpling-slider").each(function() {
         new Swiper(this, {
             // Optional parameters
             direction: "horizontal",
@@ -290,7 +290,81 @@ jQuery(document).ready(function($) {
                 prevEl: ".swiper-button-prev"
             }
         });
-    });
+    });*/
+    $(function() {
+        var dim1 = $(".main__remember-dumpling-slider-dim1"),
+            dim2 = $(".main__remember-dumpling-slider-dim2"),
+            dim3 = $(".main__remember-dumpling-slider-dim3")
+
+        Dim1()
+        function Dim1(){
+            dim1.animate(
+                {
+                    opacity: 0
+                },
+                2700,
+                "linear"
+            );
+            Dim3();
+            setTimeout(function() {
+                dim1.animate(
+                    {
+                        opacity: 1
+                    },
+                    3100,
+                    "linear"
+                )
+            }, 3700 )
+        }
+        function Dim3(){
+          setTimeout(function() {
+            dim3.animate(
+                {
+                    opacity: 0.7
+                },
+                4150,
+                "linear"
+            );
+            setTimeout(function() {
+                dim3.animate(
+                    {
+                        opacity: 0.2
+                    },
+                    1500,
+                    "linear"
+                );
+            }, 4150 )
+          }, 750 )
+          Dim2()
+        } 
+        function Dim2(){
+          setTimeout(function() {
+            dim2.animate(
+                {
+                    opacity: 1
+                },
+                3300,
+                "linear"
+            );
+            setTimeout(function() {
+                dim2.animate(
+                    {
+                        opacity: 0
+                    },
+                    2850,
+                    "linear"
+                );
+            }, 3300 )
+          }, 2600 )
+          setTimeout(function() {
+            Dim1()
+          }, 8750 )
+        } 
+            
+        /*setTimeout(function() {
+            menu.addClass("active");
+        }, 200 ); */
+    })
     /*Карта*/
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.

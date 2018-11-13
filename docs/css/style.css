@@ -506,9 +506,12 @@ h6,
   min-width: 100%;
 }
 
+.advantages__top-dumpling .main__remember-dumpling-slider {
+  bottom: auto;
+}
+
 .advantages__item {
   background-position: center;
-  background-attachment: fixed;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -920,7 +923,6 @@ button::-ms-clear {
   height: 970px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-attachment: fixed;
   position: relative;
   background-position: center;
 }
@@ -1124,7 +1126,6 @@ button::-ms-clear {
 
 .main__remember-dumpling-slider {
   position: absolute;
-  top: -20px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1132,6 +1133,19 @@ button::-ms-clear {
 
 .main__remember-dumpling-slider img {
   width: 100%;
+}
+
+.main__remember-dumpling-slider-dim1,
+.main__remember-dumpling-slider-dim2,
+.main__remember-dumpling-slider-dim3 {
+  position: absolute;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.main__remember-dumpling-slider-dim1 {
+  opacity: 1;
 }
 
 .main__real {
@@ -1206,7 +1220,6 @@ button::-ms-clear {
   background-image: url("../img/bgseparator.png");
   background-size: 2048px;
   background-position: center;
-  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
@@ -1335,7 +1348,6 @@ html.no-mobile .modal__form-button:hover {
   width: 100%;
   display: block;
   background-position: center;
-  background-attachment: fixed;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -4208,7 +4220,7 @@ button.swiper-pagination-bullet {
   }
 
   .advantages__top-dumpling .main__remember-dumpling-slider {
-    top: -115px;
+    top: 250px;
   }
 
   .advantages__item {
@@ -4450,7 +4462,6 @@ button.swiper-pagination-bullet {
     height: 970px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-attachment: fixed;
     position: relative;
   }
 
@@ -4543,6 +4554,7 @@ button.swiper-pagination-bullet {
 
   .main__remember-dumpling-slider {
     width: 228px;
+    bottom: 150px;
   }
 
   .main__real {
@@ -4854,6 +4866,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .insaid__item.-last {
+    background-attachment: fixed;
+  }
+}
+
 @media only screen and (min-width: 921px) {
   .products-card__img-sticker img {
     width: 137px;
@@ -4863,6 +4881,10 @@ button.swiper-pagination-bullet {
 @media only screen and (min-width: 1024px) {
   .hidden-above-t {
     display: none !important;
+  }
+
+  .advantages__item {
+    background-attachment: fixed;
   }
 
   .footer__menu-item {
@@ -4885,6 +4907,10 @@ button.swiper-pagination-bullet {
     line-height: 35px;
     margin-top: 53px;
     margin-bottom: 40px;
+  }
+
+  .insaid__free {
+    background-attachment: fixed;
   }
 
   .insaid__item-text-title {
@@ -4965,8 +4991,16 @@ button.swiper-pagination-bullet {
     right: calc(50% - 195px);
   }
 
+  .main__separator {
+    background-attachment: fixed;
+  }
+
   .menu-products-item {
     padding: 0 30px;
+  }
+
+  .products-card:before {
+    background-attachment: fixed;
   }
 
   .products-card .container {
@@ -5107,6 +5141,14 @@ button.swiper-pagination-bullet {
     display: none !important;
   }
 
+  .advantages__item {
+    background-attachment: scroll;
+  }
+
+  .insaid__free {
+    background-attachment: scroll;
+  }
+
   .main__real-text-title {
     font-size: 31px;
     line-height: 24px;
@@ -5124,6 +5166,14 @@ button.swiper-pagination-bullet {
     font-size: 18px;
     line-height: 21px;
     padding-right: 10px;
+  }
+
+  .main__separator {
+    background-attachment: scroll;
+  }
+
+  .products-card:before {
+    background-attachment: scroll;
   }
 
   .products-card__sticker {
@@ -5230,7 +5280,7 @@ button.swiper-pagination-bullet {
   }
 
   .advantages__top-dumpling .main__remember-dumpling-slider {
-    top: -49px;
+    top: 152px;
   }
 
   .advantages__item {
@@ -5480,7 +5530,6 @@ button.swiper-pagination-bullet {
     background-size: cover;
     text-align: center;
     max-width: none;
-    background-attachment: fixed;
     color: #000;
     margin-top: 55px;
   }
@@ -5586,6 +5635,7 @@ button.swiper-pagination-bullet {
 
   .main__remember-dumpling-slider {
     width: 126px;
+    bottom: 40px;
   }
 
   .main__real .container {
@@ -5981,6 +6031,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media only screen and (max-width: 767px) and (max-width: 1023px) {
+  .insaid__item.-last .insaid__item-text-content {
+    background-attachment: scroll;
+  }
+}
+
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 767px) and (min-resolution: 2dppx), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .main:before {
     background-image: url("../img/mainbg1_m@2x.png");
@@ -6099,6 +6155,10 @@ button.swiper-pagination-bullet {
 
   .insaid__item-text-content p {
     margin-top: 28px;
+  }
+
+  .insaid__item.-last {
+    background-attachment: scroll;
   }
 
   .main:before {
@@ -6226,6 +6286,12 @@ button.swiper-pagination-bullet {
 
   .topnav__phone {
     right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 1024px) {
+  .insaid__item.-last .insaid__item-text-content {
+    background-attachment: fixed;
   }
 }
 

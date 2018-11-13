@@ -40,7 +40,6 @@
   width: 100%;
   display: block;
   background-position: center;
-  background-attachment: fixed;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -55,6 +54,16 @@
 @media only screen and (max-width: 767px) {
   .products-card:before {
     height: 260px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .products-card:before {
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .products-card:before {
+    background-attachment: scroll;
   }
 }
 @media only screen and (min-width: 1024px) {

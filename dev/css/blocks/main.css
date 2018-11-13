@@ -401,7 +401,6 @@
 }
 .main__remember-dumpling-slider {
   position: absolute;
-  top: -20px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -409,15 +408,28 @@
 @media only screen and (min-width: 768px) {
   .main__remember-dumpling-slider {
     width: 228px;
+    bottom: 150px;
   }
 }
 @media only screen and (max-width: 767px) {
   .main__remember-dumpling-slider {
     width: 126px;
+    bottom: 40px;
   }
 }
 .main__remember-dumpling-slider img {
   width: 100%;
+}
+.main__remember-dumpling-slider-dim1,
+.main__remember-dumpling-slider-dim2,
+.main__remember-dumpling-slider-dim3 {
+  position: absolute;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+}
+.main__remember-dumpling-slider-dim1 {
+  opacity: 1;
 }
 .main__real {
   position: relative;
@@ -740,13 +752,12 @@
   background-image: url("../img/bgseparator.png");
   background-size: 2048px;
   background-position: center;
-  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 2dppx), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .main__separator {
-    background-image: url("../img/bgseparator@2x.png");
+    background-image: url("../img/bgseparator@2x.jpg");
   }
 }
 @media only screen and (min-width: 768px) {
@@ -757,5 +768,15 @@
 @media only screen and (max-width: 767px) {
   .main__separator {
     height: 660px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main__separator {
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .main__separator {
+    background-attachment: scroll;
   }
 }

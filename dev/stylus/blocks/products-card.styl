@@ -13,7 +13,6 @@
     width 100%
     display block
     background-position center
-    background-attachment fixed
     position relative
     box-sizing border-box
     background-size cover
@@ -21,7 +20,11 @@
     +a($m)
       height 487px
     +b($m)
-      height 260px
+      height 260px    
+    +a($t)
+      background-attachment fixed
+    +b($t)
+      background-attachment scroll
   .container
     +a($t)
       width 1024px

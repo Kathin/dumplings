@@ -82,13 +82,13 @@
             width 100%
             margin-left 21px
       .main__remember-dumpling-slider
+        bottom auto
         +a($m)
-          top -115px
+          top 250px
         +b($m)
-          top -49px
+          top 152px
   &__item
     background-position center
-    background-attachment fixed
     position relative
     box-sizing border-box
     background-size cover
@@ -101,7 +101,11 @@
     +b($m)
       height 654px  
       padding-top 48px    
-      text-align center
+      text-align center    
+    +a($t)
+      background-attachment fixed
+    +b($t)
+      background-attachment scroll
     &-number
       display inline-block
       background-repeat no-repeat
