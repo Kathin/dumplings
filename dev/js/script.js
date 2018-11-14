@@ -321,7 +321,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             dim3.animate(
                 {
-                    opacity: 0.5
+                    opacity: 0.3
                 },
                 4150,
                 "linear"
