@@ -232,6 +232,12 @@
 .main__top-slider .swiper-slide img {
   max-width: 100%;
 }
+.main__top-slider .swiper-slide-duplicate-next,
+.main__top-slider .swiper-slide-prev,
+.main__top-slider .swiper-slide-next,
+.main__top-slider .swiper-slide-duplicate-prev {
+  opacity: 0 !important;
+}
 .main__top-slider .swiper-button-prev {
   background-image: url("../img/arrow-left.png");
   left: auto;

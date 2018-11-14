@@ -255,6 +255,7 @@ jQuery(document).ready(function($) {
             loop: true,
             centeredSlides: true,
             loopedSlides: 1,
+            slidesPerView: 1,
             effect: "fade",
             autoplay: {
                 delay: 5000,
@@ -309,7 +310,7 @@ jQuery(document).ready(function($) {
             setTimeout(function() {
                 dim1.animate(
                     {
-                        opacity: 1
+                        opacity: 0.4
                     },
                     3100,
                     "linear"
@@ -320,7 +321,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             dim3.animate(
                 {
-                    opacity: 0.7
+                    opacity: 0.5
                 },
                 4150,
                 "linear"
@@ -328,7 +329,7 @@ jQuery(document).ready(function($) {
             setTimeout(function() {
                 dim3.animate(
                     {
-                        opacity: 0.2
+                        opacity: 0
                     },
                     1500,
                     "linear"
@@ -341,7 +342,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             dim2.animate(
                 {
-                    opacity: 1
+                    opacity: 0.7
                 },
                 3300,
                 "linear"
