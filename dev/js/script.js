@@ -310,7 +310,7 @@ jQuery(document).ready(function($) {
             setTimeout(function() {
                 dim1.animate(
                     {
-                        opacity: 0.4
+                        opacity: 0.3
                     },
                     3100,
                     "linear"
@@ -321,7 +321,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             dim3.animate(
                 {
-                    opacity: 0.4
+                    opacity: 0.3
                 },
                 4150,
                 "linear"
@@ -342,7 +342,7 @@ jQuery(document).ready(function($) {
           setTimeout(function() {
             dim2.animate(
                 {
-                    opacity: 0.5
+                    opacity: 0.3
                 },
                 3300,
                 "linear"
