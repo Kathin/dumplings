@@ -52,6 +52,7 @@
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
     "gulp-useref": "^3.1.5",
+    "gulp-tinypng-nokey": "^1.1.0",
     "imagemin-gifsicle": "^5.1.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-mozjpeg": "^7.0.0",
@@ -68,7 +69,5 @@
     "spdy": "^3.4.4",
     "yargs": "^12.0.2"
   },
-  "devDependencies": {
-    "gulp-tinypng-nokey": "^1.1.0"
-  }
+  "scripts": { "gulp": "gulp build" }
 }
